@@ -8,8 +8,9 @@
   width: 100%;
   left: 0;
   top: 0;
-
+  background: #fff;
   border-bottom: 1.8803rem solid #a0b8ff;
+  z-index: 99;
   .col {
     display: flex;
     flex-wrap: wrap;
