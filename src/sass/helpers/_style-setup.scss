@@ -3,7 +3,7 @@
 }
 html {
   font-size: 0.0277vw;
-  font-family: $roboto;
+  font-family: $poppins;
   line-height: 1.15;
   -webkit-text-size-adjust: 100%;
   -webkit-tap-highlight-color: transparent;
@@ -11,10 +11,10 @@ html {
 }
 body {
   font-size: 32rem;
-  font: 9pt/1.5em $roboto;
+  font: 9pt/1.5em $poppins;
   font-weight: 400;
   line-height: 1.5;
-  color: #151515;
+  color: #000;
   text-align: left;
   background-color: #fff;
   margin: 0;

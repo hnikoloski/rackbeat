@@ -57,7 +57,8 @@ if (!function_exists('starter_setup')) :
         // This theme uses wp_nav_menu() in one location.
         register_nav_menus(
             array(
-                'menu-1' => esc_html__('Primary', 'starter'),
+                'menu-1' => esc_html__('Header Menu', 'starter'),
+                'menu-2' => esc_html__('Header Toolbar', 'starter'),
             )
         );
 
@@ -184,3 +185,12 @@ require get_template_directory() . '/inc/customizer.php';
 if (defined('JETPACK__VERSION')) {
     require get_template_directory() . '/inc/jetpack.php';
 }
+
+
+// Disable Plugin update notification
+function filter_plugin_updates($value)
+{
+    unset($value->response['advanced-custom-fields-pro/acf.php']);
+    return $value;
+}
+add_filter('site_transient_update_plugins', 'filter_plugin_updates');

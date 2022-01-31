@@ -3,7 +3,7 @@ $regular: 400;
 $medium: 500;
 $semiBold: 600;
 $bold: 700;
-$roboto: "Roboto", "Arial";
+$poppins: "Poppins", sans-serif;
 
 // Colors
 $blue: #0c51a0;
@@ -12,7 +12,7 @@ $darkerBlue: #212e5a;
 $lblue: #37a5ff;
 $yellow: #ffd200;
 :root {
-  --side-padding: 351.610168rem;
+  --side-padding: 300.8429rem;
   @media (max-width: 768px) {
     --side-padding: 200rem;
   }
@@ -141,4 +141,10 @@ $sidePadding: var(--side-padding);
   @media (max-width: 500px) {
     font-size: 360rem;
   }
+}
+
+.gradient-bg {
+  background: #5676fd;
+  background: linear-gradient(270deg, #1949f6 8.3%, #5676fd 100%);
+  color: #fff;
 }

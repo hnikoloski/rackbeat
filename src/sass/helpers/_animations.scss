@@ -42,7 +42,18 @@
 }
 
 // Frames:
-
+@keyframes sheen {
+  100% {
+    transform: rotateZ(60deg) translate(1em, -9em);
+    -webkit-transform: rotateZ(60deg) translate(1em, -9em);
+  }
+}
+@-webkit-keyframes sheen {
+  100% {
+    transform: rotateZ(60deg) translate(1em, -9em);
+    -webkit-transform: rotateZ(60deg) translate(1em, -9em);
+  }
+}
 @-webkit-keyframes fadeInUp {
   from {
     opacity: 0;

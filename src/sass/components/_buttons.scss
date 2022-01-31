@@ -1,0 +1,8 @@
+.btn {
+  text-transform: uppercase;
+  font-size: 37.6054rem;
+  font-weight: $bold;
+  padding: 37.6054rem 139.1399rem;
+  display: block;
+  @include borderRadius(5.6408rem);
+}
