@@ -155,10 +155,10 @@ add_action('widgets_init', 'starter_widgets_init');
  */
 function starter_scripts()
 {
-    wp_register_style('style', get_template_directory_uri() . '/dist/css/app.css', [], 1, 'all');
+    wp_register_style('style', get_template_directory_uri() . '/dist/css/app.min.css', [], 1, 'all');
     wp_enqueue_style('style');
 
-    wp_register_script('app', get_template_directory_uri() . '/dist/js/app.js', ['jquery'], 1, true);
+    wp_register_script('app', get_template_directory_uri() . '/dist/js/app.min.js', ['jquery'], 1, true);
     wp_enqueue_script('app');
 }
 add_action('wp_enqueue_scripts', 'starter_scripts');
@@ -222,3 +222,11 @@ function filter_plugin_updates($value)
     return $value;
 }
 add_filter('site_transient_update_plugins', 'filter_plugin_updates');
+
+//Remove Gutenberg Block Library CSS from loading on the frontend
+function smartwp_remove_wp_block_library_css()
+{
+    wp_dequeue_style('wp-block-library');
+    wp_dequeue_style('wp-block-library-theme');
+}
+add_action('wp_enqueue_scripts', 'smartwp_remove_wp_block_library_css', 100);

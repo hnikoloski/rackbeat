@@ -59,11 +59,17 @@ $sidePadding: var(--side-padding);
 .align-items-start {
   align-items: flex-start;
 }
+.align-items-stretch {
+  align-items: stretch;
+}
 .align-items-end {
   align-items: flex-end;
 }
 .align-content-center {
   align-content: center;
+}
+.align-content-stretch {
+  align-content: stretch;
 }
 .flex-direction-col {
   flex-direction: column;

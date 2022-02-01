@@ -95,7 +95,7 @@
         ?>
         <div class="footer-signature">
             <div class="developed-by">
-                <a href="https://www.digitalpresent.io/" target="_blank">
+                <a href="https://www.digitalpresent.io/" target="_blank" rel="noopener noreferrer">
                     <span class="screen-reader-text">Developed By Digital Present</span>
                     <p>Developed By Digital Present</p>
                     <img src="<?= get_template_directory_uri(); ?>/assets/img/digital-present.svg" alt="Digital Present">
