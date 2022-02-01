@@ -1,0 +1,34 @@
+#integrate-with {
+  margin-top: 84.6121rem;
+  margin-bottom: 201.1887rem;
+  border: 1.8803rem solid #bccbff;
+  padding: 122.2174rem 159.8228rem;
+  margin-left: var(--side-padding);
+  margin-right: var(--side-padding);
+  .container {
+    background: #fff;
+    overflow: hidden;
+    .slick-slide {
+      margin: 0 50.7672rem;
+    }
+    .slick-list {
+      margin: 0 -50.7672rem;
+    }
+    .slick-track {
+      display: flex !important;
+      align-items: center;
+      align-content: center;
+    }
+    .single-app {
+      height: inherit !important;
+      a {
+        display: block;
+        width: 100%;
+        height: 94.0134rem;
+        img {
+          @include fullSizeImg(contain);
+        }
+      }
+    }
+  }
+}

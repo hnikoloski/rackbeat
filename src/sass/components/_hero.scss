@@ -29,4 +29,16 @@
       padding-left: 47.0067rem;
     }
   }
+  &.no-image {
+    padding-right: var(--side-padding);
+    padding-top: 225.6322rem;
+    margin-bottom: 225.6322rem;
+    .content {
+      width: 100%;
+      text-align: center;
+      .btn {
+        margin: 84.6121rem auto;
+      }
+    }
+  }
 }

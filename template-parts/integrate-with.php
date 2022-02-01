@@ -1,6 +1,6 @@
 <?php if (have_rows('app_integrations')) : ?>
-    <div id="integrate-with" class="page-padding-x">
-        <div class="container slick-slider" data-slick='{"slidesToShow": 4, "slidesToScroll": 4}'>
+    <section id="integrate-with">
+        <div class="container slick-slider">
             <?php while (have_rows('app_integrations')) : the_row();
                 $appLogo = get_sub_field('single_app_logo');
                 $appLink = get_sub_field('single_app_link');
@@ -12,5 +12,5 @@
                 </div>
             <?php endwhile; ?>
         </div>
-    </div>
+    </section>
 <?php endif; ?>
