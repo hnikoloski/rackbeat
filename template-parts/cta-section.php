@@ -1,17 +1,11 @@
 <section id="cta-section" class="page-padding-x">
 	<div class="wrapper">
 		<div class="img-wrapper">
-			<img src="" alt="">
+			<img src="<?php the_field('cta_image'); ?>" alt="Cta Image" class="full-size-img full-size-img-cover">
 		</div>
 		<div class="content">
-			<h2>Keep contact with your warehouse through your WMS</h2>
-			<p>
-				You can handle your warehouse from any device - whenever, wherever.
-			</p>
-			<p>
-				That means that you can always add, change or delete items in Rackbeat, so the system always fits your business’ exact needs and wishes.
-			</p>
-			<a href="#" class="btn gradient-bg w-fit-content">FREE TRIAL</a>
+			<?php the_field('cta_content'); ?>
+			<a href="<?php the_field('cta_button_link'); ?>" class="btn gradient-bg w-fit-content"><?php the_field('cta_button_text'); ?></a>
 		</div>
 	</div>
 </section>

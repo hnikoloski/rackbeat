@@ -12,7 +12,7 @@ if (empty($image)) {
 <div id="hero-home" class="pos-r <?= $hasImage; ?>">
     <div class="content">
         <?php if (get_field('hero_title')) : ?>
-            <h2><?php the_field('hero_title'); ?></h2>
+            <h1><?php the_field('hero_title'); ?></h1>
         <?php endif; ?>
         <?php if (get_field('hero_sub_title')) : ?>
             <p><?php the_field('hero_sub_title'); ?></p>

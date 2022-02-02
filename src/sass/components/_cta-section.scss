@@ -1,0 +1,55 @@
+#cta-section {
+  margin-bottom: 338.4483rem;
+  .wrapper {
+    position: relative;
+    @include borderRadius(9.4013rem);
+    background: linear-gradient(
+      180deg,
+      #87a1ff 39.49%,
+      #93abff 84.15%,
+      #a7baff 104.28%
+    );
+    display: flex;
+    padding: 69.5699rem 188.0268rem 69.5699rem 0;
+    &::after {
+      content: "";
+      position: absolute;
+      right: 148.5412rem;
+      bottom: 148.5412rem;
+      background: url("../../assets/icons/dotted-decoration.svg");
+      @include bg-props(cover, center, repeat);
+      width: 167.3439rem;
+      height: 167.3439rem;
+    }
+    .img-wrapper {
+      height: 1235.3363rem;
+      width: 50%;
+      flex: 0 0 50%;
+    }
+    .content {
+      color: #fff;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      flex: 0 0 1143.2031rem;
+      width: 1143.2031rem;
+      margin-left: 47.0067rem;
+      h1,
+      h2,
+      h3,
+      h4,
+      h5,
+      h6 {
+        margin-bottom: 63.9291rem;
+      }
+      p {
+        &:not(:last-of-type) {
+          margin-bottom: 1.5em;
+        }
+        &:last-of-type {
+          margin-bottom: 101.5345rem;
+        }
+      }
+    }
+  }
+}

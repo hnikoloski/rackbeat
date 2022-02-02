@@ -1,0 +1,124 @@
+#product-long-description {
+  margin-bottom: 376.0537rem;
+  header {
+    text-align: center;
+    .heading {
+      max-width: 1558.7424rem;
+      margin-bottom: 152.3017rem;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    p {
+      max-width: 2827.9235rem;
+      line-height: 1.5;
+      margin-left: auto;
+      margin-right: auto;
+    }
+  }
+  .wrapper {
+    padding-top: 256.8295rem;
+    position: relative;
+    &::after {
+      content: "";
+      position: absolute;
+      top: 220rem;
+      @include hor-center();
+      width: 2rem;
+      background-image: linear-gradient(#6f75ed 33%, rgba(255, 255, 255, 0) 0%);
+      background-position: right;
+      background-size: 1.8803rem 38.8027rem;
+      background-repeat: repeat-y;
+      height: calc(100% - 220rem);
+    }
+    p.decorator {
+      position: absolute;
+      top: 131.6188rem;
+      @include hor-center();
+      color: #373d9e;
+      font-size: 30.0843rem;
+      font-weight: $medium;
+      letter-spacing: 0.5em;
+      text-transform: uppercase;
+      line-height: 1.3;
+      width: -moz-fit-content;
+      width: fit-content;
+    }
+    .row {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      align-items: center;
+      align-content: center;
+      justify-content: space-between;
+      position: relative;
+      &:not(:last-of-type) {
+        margin-bottom: 150.4215rem;
+      }
+      &::after {
+        content: "\f063";
+        font-weight: 400;
+        font-family: "Font Awesome 5 Pro";
+        -webkit-font-smoothing: antialiased;
+        font-style: normal;
+        font-variant: normal;
+        text-rendering: auto;
+        line-height: 1;
+        position: absolute;
+        @include hor-center();
+        bottom: 0;
+        width: 120.3372rem;
+        height: 120.3372rem;
+        background: #373d9e;
+        background: linear-gradient(270deg, #1949f6 8.3%, #5676fd 100%);
+        @include borderRadius(50%);
+        display: flex;
+        align-items: center;
+        align-content: center;
+        justify-content: center;
+        text-align: center;
+        color: #fff;
+        font-size: 45.1264rem;
+        z-index: 9;
+      }
+      &:nth-of-type(odd) {
+        .col {
+          &:first-of-type {
+            order: 1;
+            position: relative;
+          }
+          &:last-of-type {
+            order: 2;
+          }
+        }
+      }
+      &:nth-of-type(even) {
+        .col {
+          &:first-of-type {
+            order: 2;
+          }
+          &:last-of-type {
+            order: 1;
+          }
+        }
+      }
+      .col {
+        flex: 0 0 auto;
+        width: 1325.5891rem;
+        .content {
+          h6 {
+            color: #242a9f;
+            margin-bottom: 94.0134rem;
+            font-weight: $bold;
+          }
+          p {
+            line-height: 1.5;
+          }
+        }
+        .img-wrapper {
+          width: auto;
+          height: 799.114rem;
+        }
+      }
+    }
+  }
+}
