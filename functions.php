@@ -258,3 +258,21 @@ function get_time_ago($time)
         }
     }
 }
+
+
+add_filter('wp_nav_menu_objects', 'mlnc_wp_nav_menu_objects', 10, 2);
+
+function mlnc_wp_nav_menu_objects($items, $args)
+{
+    // loop
+    foreach ($items as $item) {
+        // vars
+        $your_field = get_field('nav_menu_icon', $item);
+        // append field
+        if ($your_field) {
+            $item->title .= ' <img src="' . $your_field . '">';
+        }
+    }
+    // return
+    return $items;
+}

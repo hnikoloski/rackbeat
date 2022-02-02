@@ -9,7 +9,10 @@ jQuery(document).ready(function ($) {
         slidesToShow: 5,
         arrows: false,
         dots: false,
-        swipeToSlide: true
+        swipeToSlide: true,
+        autoplay: true,
+        autoplaySpeed: 3000,
+        pauseOnHover: true
     });
     $('.testemonials-slider').slick({
         rows: 0,

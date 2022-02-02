@@ -99,19 +99,8 @@
               border-top: 1.8803rem solid #a0b8ff;
               li {
                 line-height: 1;
-                padding-left: 125.978rem;
-                position: relative;
-                &::before {
-                  content: "";
-                  width: 84.6121rem;
-                  height: 84.6121rem;
-                  background: #c6d6ff;
-                  opacity: 0.5;
-                  @include borderRadius(7.5211rem);
-                  left: 0;
-                  @include ver-center();
-                  position: absolute;
-                }
+                padding-left: 0;
+
                 &:not(:last-of-type) {
                   margin-bottom: 94.0134rem;
                   margin-right: 0;
@@ -119,6 +108,34 @@
                 a {
                   font-size: 31.9646rem;
                   line-height: 1;
+                  position: relative;
+                  padding-left: 125.978rem;
+                  display: block;
+                  &:hover {
+                    color: #000;
+                  }
+                  &::after {
+                    display: none;
+                  }
+                  img {
+                    position: absolute;
+                    left: 0;
+                    @include ver-center();
+                    width: 84.6121rem;
+                    height: 84.6121rem;
+                    padding: 18.8027rem;
+                  }
+                  &::before {
+                    content: "";
+                    width: 84.6121rem;
+                    height: 84.6121rem;
+                    background: #c6d6ff;
+                    opacity: 0.5;
+                    @include borderRadius(7.5211rem);
+                    left: 0;
+                    @include ver-center();
+                    position: absolute;
+                  }
                 }
               }
             }
