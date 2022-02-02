@@ -230,3 +230,31 @@ function smartwp_remove_wp_block_library_css()
     wp_dequeue_style('wp-block-library-theme');
 }
 add_action('wp_enqueue_scripts', 'smartwp_remove_wp_block_library_css', 100);
+
+
+// Calculate time ago
+function get_time_ago($time)
+{
+    $time_difference = time() - $time;
+
+    if ($time_difference < 1) {
+        return 'less than 1 second ago';
+    }
+    $condition = array(
+        12 * 30 * 24 * 60 * 60 =>  'year',
+        30 * 24 * 60 * 60       =>  'month',
+        24 * 60 * 60            =>  'day',
+        60 * 60                 =>  'hour',
+        60                      =>  'minute',
+        1                       =>  'second'
+    );
+
+    foreach ($condition as $secs => $str) {
+        $d = $time_difference / $secs;
+
+        if ($d >= 1) {
+            $t = round($d);
+            return  $t . ' ' . $str . ($t > 1 ? 's' : '') . ' ago';
+        }
+    }
+}

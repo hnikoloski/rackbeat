@@ -1,4 +1,4 @@
-<div id="product-long-description" class="page-padding-x">
+<section id="product-long-description" class="page-padding-x">
     <header>
         <?php if (get_field('product_description_title')) : ?>
             <h3 class="heading"><?php the_field('product_description_title'); ?></h3>
@@ -32,4 +32,4 @@
         </div>
     <?php endif; ?>
 
-</div>
+</section>

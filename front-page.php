@@ -6,5 +6,6 @@ require('template-parts/short-description.php');
 require('template-parts/product-intro.php');
 require('template-parts/product-long-description.php');
 require('template-parts/cta-section.php');
+require('template-parts/testemonials-section.php');
 ?>
 <?php get_footer(); ?>
