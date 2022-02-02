@@ -270,7 +270,7 @@ function mlnc_wp_nav_menu_objects($items, $args)
         $your_field = get_field('nav_menu_icon', $item);
         // append field
         if ($your_field) {
-            $item->title .= ' <img src="' . $your_field . '">';
+            $item->title .= ' <img src="' . $your_field . '" alt="Menu Decorative Image">';
         }
     }
     // return
