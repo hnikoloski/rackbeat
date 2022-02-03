@@ -6,25 +6,67 @@
   flex-direction: row;
   flex-wrap: wrap;
   padding-left: var(--side-padding);
+  position: relative;
+  &::after {
+    content: "";
+    position: absolute;
+    right: 103.4148rem;
+    top: 432.4617rem;
+    height: 169.1301rem;
+    width: 56.2952rem;
+    background: url("../../assets/icons/dotted-purple-decoration.svg");
+    @include bg-props(cover, center, no-repeat);
+    @include for-phone {
+      display: none;
+    }
+  }
   .content {
     flex: 0 0 auto;
     width: 50%;
+    @include for-phone {
+      width: 100%;
+      margin-top: 873rem;
+      padding-right: var(--side-padding);
+      position: relative;
+      &::after {
+        content: "";
+        position: absolute;
+        right: 200rem;
+        bottom: 0;
+        background: url("../../assets/icons/dotted-purple-decoration.svg");
+        @include bg-props(cover, center, no-repeat);
+        width: 170rem;
+        height: 509rem;
+      }
+    }
     h1 {
       font-size: 114.6964rem;
       font-weight: $bold;
       margin-bottom: 90.2529rem;
       line-height: 1.2;
+      @include for-phone {
+        font-size: 300rem;
+        margin-bottom: 240rem;
+      }
     }
     p {
       font-size: 41.3659rem;
       line-height: 1.3;
       margin-bottom: 69.5699rem;
+      color: #14253f;
+      @include for-phone {
+        font-size: 160rem;
+        margin-bottom: 330rem;
+      }
     }
   }
   .img-wrapper {
     flex: 0 0 auto;
     width: 50%;
     margin-top: 216.2309rem;
+    @include for-phone {
+      width: 100%;
+    }
     img {
       padding-left: 47.0067rem;
     }

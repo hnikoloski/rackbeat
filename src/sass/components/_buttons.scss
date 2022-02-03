@@ -5,6 +5,10 @@
   display: block;
   @include borderRadius(5.6408rem);
   line-height: 1;
+  @include for-phone {
+    padding: 140rem 350rem;
+    font-size: 140rem;
+  }
   &.white-bg {
     color: #5565f9;
   }

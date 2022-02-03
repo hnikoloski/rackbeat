@@ -12,6 +12,11 @@
     display: flex;
     padding: 69.5699rem 188.0268rem 69.5699rem 0;
     overflow: hidden;
+    @include for-phone {
+      flex-wrap: wrap;
+      padding: 0 0 490rem 0;
+      @include borderRadius(30rem);
+    }
     &::after {
       content: "";
       position: absolute;
@@ -21,12 +26,26 @@
       @include bg-props(cover, center, repeat);
       width: 167.3439rem;
       height: 167.3439rem;
+      @include for-phone {
+        display: none;
+      }
     }
     .img-wrapper {
       height: 1235.3363rem;
       width: 1923.5144rem;
       flex: 0 0 1923.5144rem;
       margin-left: -268rem;
+      @include for-phone {
+        width: 100%;
+        flex: 0 0 100%;
+        margin-left: 0;
+        order: 2;
+        height: 2657rem;
+        img {
+          object-position: 65%;
+          -o-object-position: 65%;
+        }
+      }
     }
     .content {
       color: #fff;
@@ -36,6 +55,14 @@
       flex: 0 0 1143.2031rem;
       width: 1143.2031rem;
       margin-left: 47.0067rem;
+      @include for-phone {
+        flex: 0 0 100%;
+        width: 100%;
+        order: 1;
+        padding: 600rem 100rem 0 330rem;
+        margin-left: 0;
+        margin-bottom: 190rem;
+      }
       h1,
       h2,
       h3,
@@ -43,6 +70,9 @@
       h5,
       h6 {
         margin-bottom: 63.9291rem;
+        @include for-phone {
+          margin-bottom: 290rem;
+        }
       }
       p {
         &:not(:last-of-type) {
@@ -50,6 +80,9 @@
         }
         &:last-of-type {
           margin-bottom: 101.5345rem;
+          @include for-phone {
+            margin-bottom: 290rem;
+          }
         }
       }
     }

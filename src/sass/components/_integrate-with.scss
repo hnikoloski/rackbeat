@@ -5,14 +5,23 @@
   padding: 122.2174rem 159.8228rem;
   margin-left: var(--side-padding);
   margin-right: var(--side-padding);
+  @include for-phone {
+    padding: 230rem 250rem;
+  }
   .container {
     background: #fff;
     overflow: hidden;
     .slick-slide {
       margin: 0 50.7672rem;
+      @include for-phone {
+        margin: 0 300rem;
+      }
     }
     .slick-list {
       margin: 0 -50.7672rem;
+      @include for-phone {
+        margin: 0 -300rem;
+      }
     }
     .slick-track {
       display: flex !important;
@@ -25,6 +34,9 @@
         display: block;
         width: 100%;
         height: 94.0134rem;
+        @include for-phone {
+          height: 260rem;
+        }
         img {
           @include fullSizeImg(contain);
         }

@@ -2,17 +2,32 @@
   margin-bottom: 376.0537rem;
   header {
     text-align: center;
+    @include for-phone {
+      text-align: left;
+    }
     .heading {
       max-width: 1558.7424rem;
       margin-bottom: 152.3017rem;
       margin-left: auto;
       margin-right: auto;
+      @include for-phone {
+        max-width: 100%;
+        margin-bottom: 250rem;
+        margin-left: 0;
+        margin-right: 0;
+      }
     }
     p {
       max-width: 2827.9235rem;
       line-height: 1.5;
       margin-left: auto;
       margin-right: auto;
+      @include for-phone {
+        max-width: 100%;
+        margin-left: 0;
+        margin-right: 0;
+        margin-bottom: 380rem;
+      }
     }
   }
   .wrapper {
@@ -29,6 +44,23 @@
       background-size: 1.8803rem 38.8027rem;
       background-repeat: repeat-y;
       height: calc(100% - 220rem);
+      @include for-phone {
+        height: 20rem;
+        width: 100%;
+        background-image: linear-gradient(
+          to right,
+          #6f75ed 33%,
+          rgba(255, 255, 255, 0) 0%
+        );
+        background-position: bottom;
+        background-size: 250rem 20rem;
+        background-repeat: repeat-x;
+        top: auto;
+        @include rm-transform();
+        bottom: 0;
+        left: 0;
+        display: none;
+      }
     }
     p.decorator {
       position: absolute;
@@ -53,6 +85,12 @@
       position: relative;
       &:not(:last-of-type) {
         margin-bottom: 150.4215rem;
+        @include for-phone {
+          margin-bottom: 0;
+        }
+      }
+      @include for-phone {
+        padding-bottom: 690rem;
       }
       &::after {
         content: "\f063";
@@ -79,15 +117,60 @@
         color: #fff;
         font-size: 45.1264rem;
         z-index: 9;
+        @include for-phone {
+          content: "\f061";
+          width: 380rem;
+          height: 380rem;
+          font-size: 140rem;
+          @include rm-transform();
+          left: 0;
+        }
+      }
+      &::before {
+        content: "";
+        position: absolute;
+        top: 220rem;
+        @include hor-center();
+        width: 2rem;
+        background-image: linear-gradient(
+          #6f75ed 33%,
+          rgba(255, 255, 255, 0) 0%
+        );
+        background-position: right;
+        background-size: 1.8803rem 38.8027rem;
+        background-repeat: repeat-y;
+        height: calc(100% - 220rem);
+        @include for-phone {
+          height: 20rem;
+          width: 100%;
+          background-image: linear-gradient(
+            to right,
+            #6f75ed 33%,
+            rgba(255, 255, 255, 0) 0%
+          );
+          background-position: bottom;
+          background-size: 250rem 20rem;
+          background-repeat: repeat-x;
+          top: auto;
+          @include rm-transform();
+          bottom: 180rem;
+          left: 0;
+        }
       }
       &:nth-of-type(odd) {
         .col {
           &:first-of-type {
             order: 1;
             position: relative;
+            @include for-phone {
+              order: 2;
+            }
           }
           &:last-of-type {
             order: 2;
+            @include for-phone {
+              order: 1;
+            }
           }
         }
       }
@@ -104,19 +187,45 @@
       .col {
         flex: 0 0 auto;
         width: 1325.5891rem;
+        @include for-phone {
+          width: 100%;
+        }
         .content {
           h6 {
             color: #242a9f;
             margin-bottom: 94.0134rem;
             font-weight: $bold;
+            @include for-phone {
+              margin-bottom: 260rem;
+            }
           }
           p {
             line-height: 1.5;
+            @include for-phone {
+              padding-right: 140rem;
+            }
           }
         }
         .img-wrapper {
           width: auto;
           height: 799.114rem;
+          @include for-phone {
+            height: 2030rem;
+            margin-bottom: 460rem;
+          }
+        }
+      }
+    }
+    &.slick-slider {
+      @include for-phone {
+        overflow: hidden;
+        .slick-track {
+          display: flex !important;
+          align-items: center;
+          align-content: center;
+          .slick-slide {
+            height: 100% !important;
+          }
         }
       }
     }

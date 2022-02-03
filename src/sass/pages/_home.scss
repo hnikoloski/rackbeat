@@ -13,8 +13,19 @@
       flex: 0 0 auto;
       max-width: 25%;
       position: relative;
+      @include for-phone {
+        max-width: 100%;
+        width: 100%;
+        flex: 0 0 100%;
+        padding-bottom: 450rem;
+      }
       &:not(:last-of-type) {
         padding-right: 112.8161rem;
+        @include for-phone {
+          padding-right: 0;
+          border-bottom: 1px solid rgb(188, 203, 255, 0.7);
+          margin-bottom: 300rem;
+        }
         &::after {
           position: absolute;
           content: "";
@@ -23,30 +34,58 @@
           width: 1.8803rem;
           background: #bccbff;
           @include ver-center();
+          @include for-phone {
+            display: none;
+          }
         }
       }
       &:not(:first-of-type) {
         padding-left: 112.8161rem;
+        @include for-phone {
+          padding-left: 0;
+        }
       }
       .img-wrapper {
         width: 100%;
         height: 272.6389rem;
         margin-bottom: 78.9713rem;
+        @include for-phone {
+          width: 2000rem;
+          height: 1330rem;
+          margin-left: auto;
+          margin-right: auto;
+          margin-bottom: 220rem;
+        }
       }
       p {
         font-weight: $semiBold;
         line-height: 1.3;
+        @include for-phone {
+          text-align: center;
+          font-size: 180rem;
+          padding: 0 300rem;
+        }
       }
     }
   }
 }
 #product-intro {
   margin-bottom: 272.6389rem;
+  @include for-phone {
+    margin-bottom: 500rem;
+  }
   .content {
     flex: 0 0 1306.7865rem;
     width: 1306.7865rem;
+    @include for-phone {
+      flex: 0 0 100%;
+      width: 100%;
+    }
     .heading {
       margin-bottom: 75.2107rem;
+      @include for-phone {
+        margin-bottom: 380rem;
+      }
     }
     p {
       &:not(:last-of-type) {
@@ -56,6 +95,9 @@
         color: #6557ff;
         position: relative;
         text-decoration: none;
+        @include for-phone {
+          text-decoration: underline;
+        }
         &::after {
           content: "";
           position: absolute;
@@ -66,6 +108,9 @@
           background: #6557ff;
           transition: 0.5s;
           z-index: -9;
+          @include for-phone {
+            display: none;
+          }
         }
         &:hover {
           color: #fff;
@@ -78,21 +123,33 @@
     }
     .btn {
       margin-top: 109.0556rem;
+      @include for-phone {
+        margin-top: 250rem;
+      }
     }
   }
   .img-wrapper {
     width: 1357.5537rem;
     flex: 0 0 1357.5537rem;
+    @include for-phone {
+      width: 100%;
+      flex: 0 0 100%;
+      margin-top: 500rem;
+    }
   }
 }
 #testemonials-section {
   overflow-x: hidden;
+
   header {
     margin-bottom: 178.6255rem;
     .heading {
       line-height: 1.3;
     }
     .btns-wrapper {
+      @include for-phone {
+        display: none;
+      }
       a {
         @include borderRadius(50%);
         display: flex;
@@ -114,13 +171,22 @@
   }
   .wrapper {
     padding-left: var(--side-padding);
+    @include for-phone {
+      padding-right: var(--side-padding);
+    }
   }
   .testemonials-slider {
     .slick-slide {
       margin: 0 112.8161rem;
+      @include for-phone {
+        margin: 0 200rem;
+      }
     }
     .slick-list {
       margin: 0 -112.8161rem;
+      @include for-phone {
+        margin: 0 -200rem;
+      }
     }
     .slick-track {
       display: flex !important;
@@ -132,19 +198,36 @@
       @include borderRadius(13.1619rem);
       background: #fff;
       box-shadow: 0px 94.0134rem 120rem rgba(85, 101, 249, 0.25);
-      width: 1128.161rem !important;
+      width: 1128.161rem;
       flex: 0 0 1128.161rem;
+      @include for-phone {
+        flex: 1 0 auto;
+        width: auto;
+        padding: 230rem 310rem;
+        @include borderRadius(39rem);
+        height: inherit !important;
+      }
       h4 {
         font-size: 41.3659rem;
         letter-spacing: 0.02em;
         font-weight: $semiBold;
         margin-bottom: 28.204rem;
+        @include for-phone {
+          font-size: 160rem;
+          margin-bottom: 80rem;
+        }
       }
       .rating {
         margin-bottom: 31.9646rem;
+        @include for-phone {
+          margin-bottom: 100rem;
+        }
         i {
           color: #f6ad55;
           font-size: 31.9646rem;
+          @include for-phone {
+            font-size: 100rem;
+          }
         }
       }
       .message {
@@ -152,12 +235,26 @@
         line-height: 1.2;
         color: #4d4f63;
         margin-bottom: 41.3659rem;
+        @include for-phone {
+          font-size: 140rem;
+          margin-bottom: 120rem;
+        }
       }
       h5 {
         margin-bottom: 15.0421rem;
         font-size: 37.6054rem;
         letter-spacing: 0.02em;
         font-weight: $bold;
+        @include for-phone {
+          font-size: 140rem;
+        }
+      }
+      .date {
+        text-transform: capitalize;
+        @include for-phone {
+          font-size: 120rem;
+          color: #9f9f9f;
+        }
       }
     }
   }
