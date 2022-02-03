@@ -17,3 +17,35 @@
     }
   }
 }
+.dust {
+  position: relative;
+  &::before {
+    content: "";
+    position: absolute;
+    width: 100vw;
+    height: 200vh;
+    z-index: -2;
+    background: radial-gradient(
+      43.24% 43.24% at 50% 50%,
+      #7a9bff 0%,
+      rgba(230, 230, 253, 0)
+    );
+    opacity: 0.5;
+    @include ver-center();
+  }
+  &-left-side {
+    &::before {
+      left: -100vw;
+    }
+  }
+  &-right-side {
+    &::before {
+      right: -100vw;
+    }
+  }
+  &-no-space {
+    position: absolute;
+    width: 100vh;
+    z-index: -1;
+  }
+}

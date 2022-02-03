@@ -17,6 +17,8 @@
     width: 56.2952rem;
     background: url("../../assets/icons/dotted-purple-decoration-small.svg");
     @include bg-props(cover, center, no-repeat);
+    z-index: 1;
+    pointer-events: none;
     @include for-phone {
       display: none;
     }
@@ -30,6 +32,8 @@
     height: 242.5546rem;
     background: url("../../assets/icons/dotted-purple-decoration.svg");
     @include bg-props(cover, center, no-repeat);
+    z-index: 1;
+    pointer-events: none;
     @include for-phone {
       display: none;
     }
