@@ -65,3 +65,21 @@ a:not([href]) {
   color: inherit;
   text-decoration: none;
 }
+
+.dust {
+  width: 3617.6362rem;
+  height: 3890.2751rem;
+  background: radial-gradient(
+    43.24% 43.24% at 50% 50%,
+    #7a9bff 0%,
+    rgba(230, 230, 253, 0) 100%
+  );
+  opacity: 0.5;
+  position: absolute;
+  &-left-hand {
+    left: 1808.8181rem;
+  }
+  &-right-hand {
+    right: 1808.8181rem;
+  }
+}

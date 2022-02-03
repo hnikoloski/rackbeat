@@ -1,0 +1,19 @@
+#page {
+  position: relative;
+  overflow-x: hidden;
+  &::after {
+    content: "";
+    position: absolute;
+    width: 3923.8191rem;
+    height: 1726.1803rem;
+    left: 0;
+    top: -686.5988rem;
+    background: linear-gradient(168.88deg, #d9e4ff 8.22%, #fcfdff 55.31%);
+    @include borderRadius(210.9755rem);
+    z-index: -9;
+    pointer-events: none;
+    @include for-phone {
+      display: none;
+    }
+  }
+}

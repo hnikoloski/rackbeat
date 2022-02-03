@@ -1,7 +1,12 @@
 <section id="short-description" class="page-padding-x">
     <header>
-        <h3 class="heading"><?php the_field('short_description_heading'); ?></h3>
-        <p><?php the_field('short_description_content'); ?></p>
+        <?php if (get_field('short_description_heading')) : ?>
+            <h3 class="heading"><?php the_field('short_description_heading'); ?></h3>
+        <?php endif; ?>
+        <?php if (get_field('short_description_content')) : ?>
+            <p><?php the_field('short_description_content'); ?></p>
+        <?php endif; ?>
+
     </header>
     <?php if (have_rows('image_boxes')) : ?>
         <div class="wrapper d-flex flex-wrap align-content-stretch align-items-stretch justify-content-space-between">

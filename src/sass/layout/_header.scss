@@ -8,7 +8,6 @@
   width: 100%;
   left: 0;
   top: 0;
-  background: #fff;
   border-bottom: 1.8803rem solid #a0b8ff;
   z-index: 99;
   @include for-phone {
@@ -227,6 +226,7 @@
     }
   }
   &.sticky {
+    background: rgba(255, 255, 255, 1);
     .col {
       .logo-wrapper {
         width: 240rem;
