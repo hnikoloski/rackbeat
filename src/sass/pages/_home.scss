@@ -251,9 +251,9 @@
       }
       .date {
         text-transform: capitalize;
+        color: #9f9f9f;
         @include for-phone {
           font-size: 120rem;
-          color: #9f9f9f;
         }
       }
     }
