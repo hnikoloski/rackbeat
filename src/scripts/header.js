@@ -1,5 +1,6 @@
 jQuery(document).ready(function ($) {
-    $("#page").css("padding-top", $("#masthead").outerHeight());
+
+
     $(window).on('scroll', function () {
         scroll = $(window).scrollTop();
         if (scroll >= 100) {
@@ -38,4 +39,8 @@ jQuery(document).ready(function ($) {
             $(this).parent().siblings('.sub-menu').slideToggle()
         })
     }
+
+
+    $("#page").css("padding-top", $("#masthead").outerHeight());
+
 });
