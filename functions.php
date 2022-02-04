@@ -202,8 +202,8 @@ if (function_exists('acf_add_options_page')) {
     ));
 
     acf_add_options_sub_page(array(
-        'page_title'     => 'Theme Header Settings',
-        'menu_title'    => 'Header',
+        'page_title'     => 'Socials',
+        'menu_title'    => 'Socials',
         'parent_slug'    => 'theme-general-settings',
     ));
 

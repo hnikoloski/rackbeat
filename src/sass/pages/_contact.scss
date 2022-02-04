@@ -1,0 +1,216 @@
+.page-template-contact-page {
+  #page {
+    &::after {
+      width: 3923.8191rem;
+      height: 2212.1732rem;
+      left: -274.0134rem;
+      top: -686.5988rem;
+      @include rotate(-3);
+    }
+  }
+  .container {
+    padding: 297.0824rem 338.4483rem 338.4483rem 338.4483rem;
+    position: relative;
+    &::before {
+      content: "";
+      position: absolute;
+      left: 80.8515rem;
+      top: 206.8295rem;
+      width: 169.1301rem;
+      height: 244.1152rem;
+      background: url("../../assets/icons/dotted-purple-decoration.svg");
+      @include bg-props(cover, center, no-repeat);
+    }
+    &::after {
+      content: "";
+      position: absolute;
+      right: 94.0134rem;
+      top: 432.4617rem;
+      width: 56.2952rem;
+      height: 169.1301rem;
+      background: url("../../assets/icons/dotted-purple-decoration-small.svg");
+      @include bg-props(cover, center, no-repeat);
+    }
+    .col {
+      flex: 0 0 50%;
+      width: 50%;
+      &.w-100 {
+        width: 100%;
+        flex: 0 0 100%;
+      }
+      &:first-of-type {
+        padding-right: 94.0134rem;
+      }
+      h1 {
+        font-size: 114.6964rem;
+        font-weight: $bold;
+        margin-bottom: 94.0134rem;
+      }
+      .the-content {
+        max-width: 1109.3583rem;
+        margin-bottom: 159.8228rem;
+      }
+      .contact-list {
+        margin-bottom: 188.0268rem;
+        li {
+          padding-left: 159.8228rem;
+          position: relative;
+          color: #000;
+          font-size: 37.6054rem;
+          a {
+            color: #000;
+            text-decoration: none;
+            &:hover {
+              text-decoration: underline;
+            }
+          }
+          &::before {
+            content: "";
+            position: absolute;
+            left: 0;
+            @include ver-center();
+            width: 103.4148rem;
+            height: 103.4148rem;
+          }
+          &:not(:last-of-type) {
+            margin-bottom: 116.5766rem;
+          }
+          &.phone-num {
+            &::before {
+              background: url("../../assets/icons/phone-circled-icon.svg");
+              @include bg-props(cover, center, no-repeat);
+            }
+          }
+          &.email {
+            &::before {
+              background: url("../../assets/icons/email-circled-icon.svg");
+              @include bg-props(cover, center, no-repeat);
+            }
+          }
+          &.location {
+            &::before {
+              background: url("../../assets/icons/location-circled-icon.svg");
+              @include bg-props(cover, center, no-repeat);
+            }
+          }
+        }
+      }
+      .bottom {
+        h6 {
+          font-weight: $bold;
+          margin-bottom: 75.2107rem;
+        }
+        .wrapper {
+          margin-bottom: 300.8429rem;
+          & > div {
+            &:first-of-type {
+              margin-right: 235.0335rem;
+              .days {
+                font-size: 41.3659rem;
+                margin-bottom: 52.6475rem;
+              }
+              .hours {
+                font-size: 58.2883rem;
+                font-weight: $bold;
+              }
+            }
+            &:nth-of-type(2) {
+              p {
+                font-weight: $bold;
+                font-size: 33.8448rem;
+                letter-spacing: 0.01em;
+                margin-bottom: 52.6475rem;
+              }
+              .socials {
+                li {
+                  &:not(:last-of-type) {
+                    margin-right: 63.9291rem;
+                  }
+
+                  .social-icon {
+                    display: block;
+                    width: 82.7318rem;
+                    height: 82.7318rem;
+                    &:hover {
+                      transform: scale(1.1);
+                    }
+                    &-linkedin {
+                      background: url("../../assets/icons/linkedin-icon-dark.svg");
+                      @include bg-props(contain, center, no-repeat);
+                    }
+                    &-fb {
+                      background: url("../../assets/icons/facebook-icon-dark.svg");
+                      @include bg-props(contain, center, no-repeat);
+                    }
+                    &-yt {
+                      background: url("../../assets/icons/youtube-icon-dark.svg");
+                      @include bg-props(contain, center, no-repeat);
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+      .map-wrapper {
+        width: 100%;
+        height: 1145.0834rem;
+        iframe {
+          width: 100%;
+          height: 100%;
+        }
+      }
+      &.contact-form {
+        br {
+          display: none;
+        }
+        p {
+          line-height: 0.1;
+        }
+        label {
+          font-size: 41.3659rem;
+          font-weight: $bold;
+          margin-bottom: 47.0067rem;
+          display: block;
+          line-height: 1.2;
+        }
+        input[type="text"],
+        input[type="email"] {
+          width: 100%;
+          border: none;
+          background: #f8f8ff;
+          padding: 33.8448rem 63.9291rem;
+          font-size: 37.6054rem;
+          color: #000;
+          margin-bottom: 47.0067rem;
+          &::placeholder {
+            color: rgba(0, 0, 0, 0.8);
+          }
+        }
+        textarea {
+          background: #f8f8ff;
+          width: 100%;
+          height: 379.8142rem;
+          resize: none;
+          -webkit-resize: none;
+          padding: 37.6054rem 63.9291rem;
+          margin-bottom: 0;
+          font-size: 37.6054rem;
+          color: #000;
+          font-family: $poppins;
+          border: none;
+        }
+        .btn {
+          width: 100%;
+          border: none;
+          font-size: 41.3659rem;
+          font-family: $poppins;
+          padding-top: 63.9291rem;
+          padding-bottom: 63.9291rem;
+          line-height: 1;
+        }
+      }
+    }
+  }
+}
