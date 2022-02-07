@@ -1,0 +1,85 @@
+.page-template-book-demo {
+  .cta {
+    margin-top: 56.408rem;
+    margin-bottom: 366.6523rem;
+    .wrapper {
+      @include borderRadius(33.8448rem);
+      padding-top: 146.6609rem;
+      padding-bottom: 347.8496rem;
+      background: linear-gradient(
+        183.32deg,
+        #ffffff 2.85%,
+        rgba(198, 202, 231, 1) 117%
+      );
+      .img-wrapper {
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 35.7251rem;
+        width: 188.0268rem;
+        height: 188.0268rem;
+      }
+      h3,
+      h4 {
+        text-align: center;
+      }
+      h4 {
+        font-size: 58.2883rem;
+        font-weight: $medium;
+        margin-top: 37.6054rem;
+        margin-bottom: 150.4215rem;
+      }
+      form {
+        width: 2096.4991rem;
+        margin-left: auto;
+        margin-right: auto;
+        .container {
+          display: flex;
+          align-items: center;
+          align-content: center;
+          justify-content: center;
+          flex-direction: row;
+          flex-wrap: wrap;
+          .col {
+            flex: 0 0 auto;
+            width: auto;
+            max-width: auto;
+            height: 169.2241rem;
+            input {
+              border: none;
+            }
+            .wpcf7-not-valid-tip {
+              position: absolute;
+              top: -122.2174rem;
+            }
+            input[type="email"] {
+              width: 1481.6514rem;
+              height: 100%;
+              background: #fff;
+              padding: 56.408rem 94.0134rem;
+              font-size: 37.6054rem;
+              color: #000;
+              font-family: $poppins;
+            }
+            input[type="submit"] {
+              width: 611.0872rem;
+              height: 100%;
+              font-family: $poppins;
+            }
+          }
+          .col-12 {
+            flex: 0 0 100%;
+            width: 100%;
+            label {
+              font-size: 41.3659rem;
+              color: #373d9e;
+              margin-top: 62.0489rem;
+              display: block;
+              font-weight: $regular;
+              font-family: $poppins;
+            }
+          }
+        }
+      }
+    }
+  }
+}
