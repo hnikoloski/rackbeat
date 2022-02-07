@@ -50,6 +50,13 @@
           .col {
             flex: 0 0 auto;
             width: 1231.5757rem;
+            input,
+            select,
+            textarea {
+              &:focus {
+                outline: 3.7605rem solid #1c4bf6;
+              }
+            }
             input {
               &[type="text"],
               &[type="tel"],

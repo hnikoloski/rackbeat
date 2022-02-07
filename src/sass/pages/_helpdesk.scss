@@ -1,0 +1,82 @@
+.page-template-helpdesk {
+  .hero {
+    padding-top: 188.0268rem;
+    text-align: center;
+    h1 {
+      font-size: 114.6964rem;
+      font-weight: $bold;
+      margin-bottom: 63.9291rem;
+    }
+    p {
+      margin-bottom: 75.2107rem;
+    }
+    form {
+      display: flex;
+      flex-wrap: wrap;
+      align-content: center;
+      justify-content: center;
+      align-items: center;
+      flex-direction: row;
+      height: 141.0201rem;
+      width: 1630.1926rem;
+      flex: 0 0 auto;
+      margin-left: auto;
+      margin-right: auto;
+      margin-bottom: 270.7586rem;
+      position: relative;
+      i {
+        position: absolute;
+        @include ver-center();
+        left: 65.8094rem;
+        font-size: 45.1264rem;
+        color: #000;
+      }
+      input {
+        height: 100%;
+        width: calc(100% - 434.342rem);
+        border: 1.8803rem solid #8faee6;
+        padding: 41.3659rem 56.408rem 41.3659rem 157.9425rem;
+        font-size: 37.6054rem;
+        color: #000;
+      }
+      button {
+        border: none;
+        background: linear-gradient(180deg, #5cebb7 0%, #34be8c 100%);
+        @include borderRadius(5.6408rem);
+        color: #fff;
+        font-size: 37.6054rem;
+        font-weight: $bold;
+        width: 434.342rem;
+        height: 100%;
+        cursor: pointer;
+      }
+    }
+  }
+  main {
+    .heading {
+      text-align: center;
+      font-weight: $bold;
+      margin-bottom: 231.273rem;
+    }
+    .container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      .col {
+        flex: 0 0 auto;
+        width: 1316.1878rem;
+        margin-bottom: 169.2241rem;
+        h6 {
+          color: #373d9e;
+          font-weight: $bold;
+          margin-bottom: 84.6121rem;
+        }
+        p {
+          a {
+            color: #373d9e;
+          }
+        }
+      }
+    }
+  }
+}

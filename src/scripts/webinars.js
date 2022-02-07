@@ -5,7 +5,7 @@ jQuery(document).ready(function ($) {
         let apiLoader = `<div id="apiLoader"><i class="fas fa-spinner"></i></div>`;
         $(".filterable-apps .filterable-results").html(apiLoader);
         axios
-            .get("/wp-json/wp/v2/free-webinars")
+            .get("/wp-json/wp/v2/free-webinars?per_page=100")
             .then((response) => {
                 let webinarData = response.data;
                 const webinarMarkup = webinarData.reverse().map((webinar) => {

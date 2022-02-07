@@ -113,7 +113,7 @@
           border-bottom-left-radius: 188.026828rem;
           -moz-border-bottom-left-radius: 188.026828rem;
           -webkit-border-bottom-left-radius: 188.026828rem;
-          border: 1.880268rem solid $lblue;
+          border: 1.880268rem solid #6886c3;
           &:focus {
             border-color: $darkerBlue;
           }
@@ -122,11 +122,17 @@
       .search-submit {
         width: 30%;
         flex: 0 0 auto;
-        border: 1.880268rem solid $lblue;
+        border: 1.880268rem solid #6886c3;
         border-top-right-radius: 188.026828rem;
         -moz-border-top-right-radius: 188.026828rem;
         -webkit-border-top-right-radius: 188.026828rem;
-        background: $lblue;
+        background: linear-gradient(
+          137.52deg,
+          #6886c3 -37.59%,
+          #5565f9 4.05%,
+          #1a0f91 84.33%,
+          #5565f9 155.18%
+        );
         color: #fff;
         border-bottom-right-radius: 188.026828rem;
         -moz-border-bottom-right-radius: 188.026828rem;
@@ -136,10 +142,6 @@
         font-size: 41.365902rem;
         text-transform: uppercase;
         padding: 0;
-        &:hover {
-          background: $darkerBlue;
-          border-color: $darkerBlue;
-        }
       }
     }
   }
