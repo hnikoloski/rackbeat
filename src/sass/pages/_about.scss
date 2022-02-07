@@ -1,0 +1,42 @@
+.page-template-about {
+  .hero {
+    .img-wrapper {
+      margin-top: 0;
+      height: 1190.2098rem;
+    }
+    .content {
+      width: 1295.5048rem;
+      p {
+        color: #000;
+        &:not(:last-of-type) {
+          margin-bottom: 112.8161rem;
+        }
+      }
+    }
+  }
+  main {
+    margin-top: 169.2241rem;
+    margin-bottom: 423.0604rem;
+
+    p {
+      &:not(:last-of-type) {
+        margin-bottom: 1em;
+      }
+    }
+    .ending {
+      margin-top: 300.8429rem;
+
+      .heading {
+        margin-bottom: 75.2107rem;
+      }
+      p {
+        a {
+          color: #5565f9;
+          &:hover {
+            text-decoration: underline;
+          }
+        }
+      }
+    }
+  }
+}
