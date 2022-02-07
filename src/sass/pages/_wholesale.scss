@@ -1,10 +1,105 @@
 .page-template-wholesale {
   #inner-content {
+    margin-bottom: 413.659rem;
     header {
       margin-bottom: 120.3372rem;
       text-align: center;
       h4 {
+        font-weight: $bold;
         margin-bottom: 131.6188rem;
+      }
+    }
+    main {
+      margin-bottom: 244.4349rem;
+      .content {
+        .img-wrapper {
+          width: 48%;
+          flex: 0 0 48%;
+        }
+        .col {
+          flex: 0 0 auto;
+          width: 1366.955rem;
+          position: relative;
+          padding-bottom: 188.0268rem;
+          &::after {
+            content: "";
+            position: absolute;
+            right: 0;
+            bottom: 0;
+            width: 503.7991rem;
+            height: 169.1301rem;
+            background: url("../../assets/icons/dotted-decoration-horizontal.svg");
+            @include bg-props(contain, center, no-repeat);
+          }
+          h5 {
+            margin-bottom: 54.5278rem;
+          }
+          p {
+            margin-bottom: 56.408rem;
+          }
+          ul {
+            li {
+              font-size: 41.3659rem;
+              font-weight: $semiBold;
+              padding-left: 142.9004rem;
+              position: relative;
+              &::before {
+                content: "";
+                position: absolute;
+                @include ver-center();
+                left: 0;
+                width: 82.7318rem;
+                height: 82.7318rem;
+                background-image: url("../../assets/icons/checkmark.svg");
+                @include bg-props(45.1264rem, center, no-repeat);
+                background-color: rgba(86, 118, 253, 0.2);
+                @include borderRadius(50%);
+              }
+              &:not(:last-of-type) {
+                margin-bottom: 54.5278rem;
+              }
+            }
+          }
+        }
+      }
+    }
+    footer {
+      h6 {
+        font-weight: $bold;
+        margin-bottom: 338.4483rem;
+        text-align: center;
+      }
+      .content {
+        .col {
+          flex: 0 0 auto;
+          width: 1316.1878rem;
+          h6 {
+            margin-bottom: 75.2107rem;
+            font-weight: $medium;
+            text-align: initial;
+            line-height: 1.3;
+          }
+          p {
+            line-height: 1.5;
+            &:not(:last-of-type) {
+              margin-bottom: 1.5em;
+            }
+            a {
+              color: #5565f9;
+              &:hover {
+                text-decoration: underline;
+              }
+            }
+          }
+          .btn {
+            margin-top: 150.4215rem;
+          }
+        }
+        .img-wrapper {
+          flex: 0 0 auto;
+          width: 1344.3918rem;
+          height: 1421.4828rem;
+        }
       }
     }
   }
