@@ -9,7 +9,7 @@
 
     </header>
     <?php if (have_rows('image_boxes')) : ?>
-        <div class="wrapper d-flex flex-wrap align-content-stretch align-items-stretch justify-content-space-between">
+        <div class="wrapper d-flex flex-wrap align-content-stretch align-items-stretch justify-content-space-around">
             <?php while (have_rows('image_boxes')) : the_row();
                 $boxImage = get_sub_field('image');
                 $boxTitle = get_sub_field('title');

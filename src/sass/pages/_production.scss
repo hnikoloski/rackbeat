@@ -1,0 +1,12 @@
+.page-template-production {
+  .hero-inner {
+    p {
+      font-weight: $bold;
+    }
+    .extra {
+      p {
+        font-weight: $regular;
+      }
+    }
+  }
+}

@@ -2,7 +2,7 @@
 
 const mix = require("laravel-mix");
 
-mix.disableNotifications();
+// mix.disableNotifications();
 
 mix
     .options({

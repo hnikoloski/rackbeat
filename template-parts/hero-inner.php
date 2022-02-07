@@ -16,6 +16,11 @@ if (empty($image)) {
         <?php if (get_field('hero_sub_title')) : ?>
             <p><?php the_field('hero_sub_title'); ?></p>
         <?php endif; ?>
+        <?php if (get_field('hero_additional_paragraph')) : ?>
+            <div class="extra">
+                <?php the_field('hero_additional_paragraph'); ?>
+            </div>
+        <?php endif; ?>
         <?php if (get_field('hero_button_url')) : ?>
             <a href="<?php the_field('hero_button_url'); ?>" class="btn gradient-bg w-fit-content"><?php the_field('hero_button_text'); ?></a>
         <?php endif; ?>
