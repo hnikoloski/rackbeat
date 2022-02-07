@@ -1,0 +1,105 @@
+.page-template-webinars {
+  .hero {
+    .extra {
+      p {
+        font-size: 82.7318rem;
+        font-weight: $medium;
+      }
+    }
+  }
+  main {
+    .checkmark-list {
+      margin-top: 122.2174rem;
+      margin-bottom: 150.4215rem;
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      flex-direction: row;
+      align-items: flex-start;
+      align-content: flex-start;
+      li {
+        flex: 0 0 45%;
+        width: 45%;
+        &:not(:last-of-type) {
+          margin-bottom: 129.7385rem;
+        }
+      }
+    }
+    .bottom {
+      margin-bottom: 376.0537rem;
+      form {
+        .wpcf7-response-output {
+          margin-right: 188.0268rem;
+        }
+        br {
+          display: none;
+        }
+        label {
+          display: block;
+          line-height: 1;
+          margin-bottom: 52.6475rem;
+          font-size: 41.3659rem;
+          font-weight: $semiBold;
+          margin-top: 65.8094rem;
+        }
+        .container {
+          display: flex;
+          flex-wrap: wrap;
+          justify-content: space-between;
+          padding-right: 188.0268rem;
+          .col {
+            flex: 0 0 auto;
+            width: 1231.5757rem;
+            input {
+              &[type="text"],
+              &[type="tel"],
+              &[type="email"] {
+                width: 100%;
+                background: #f9f7ff;
+                padding: 37.6054rem 63.9291rem;
+                color: #000;
+                font-size: 37.6054rem;
+                line-height: 1.5;
+                border: none;
+              }
+              &[type="submit"] {
+                border: none;
+                margin-top: -143rem;
+                width: 100%;
+                cursor: pointer;
+              }
+            }
+            textarea {
+              width: 100%;
+              background: #f9f7ff;
+              padding: 37.6054rem 63.9291rem;
+              color: #000;
+              font-size: 37.6054rem;
+              line-height: 1.3;
+              font-family: $poppins;
+              border: none;
+              height: 396.7366rem;
+              resize: none;
+            }
+            select {
+              width: 100%;
+              background: #f9f7ff;
+              padding: 37.6054rem 63.9291rem;
+              color: #000;
+              font-size: 37.6054rem;
+              line-height: 1.3;
+              font-family: $poppins;
+              border: none;
+              -moz-appearance: none; /* Firefox */
+              -webkit-appearance: none; /* Safari and Chrome */
+              appearance: none;
+              position: relative;
+              background: url("http://cdn1.iconfinder.com/data/icons/cc_mono_icon_set/blacks/16x16/br_down.png")
+                no-repeat 95% 55% #f9f7ff;
+            }
+          }
+        }
+      }
+    }
+  }
+}

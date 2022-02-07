@@ -1,0 +1,22 @@
+ul {
+  &.checkmark-list {
+    li {
+      font-size: 41.3659rem;
+      font-weight: $semiBold;
+      padding-left: 142.9004rem;
+      position: relative;
+      &::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 82.7318rem;
+        height: 82.7318rem;
+        background-image: url("../../assets/icons/checkmark.svg");
+        @include bg-props(45.1264rem, center, no-repeat);
+        background-color: rgba(86, 118, 253, 0.2);
+        @include borderRadius(50%);
+      }
+    }
+  }
+}
