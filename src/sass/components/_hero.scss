@@ -8,6 +8,8 @@
   flex-wrap: wrap;
   padding-left: var(--side-padding);
   position: relative;
+  margin-top: 216.2309rem;
+
   &::after {
     content: "";
     position: absolute;
@@ -81,7 +83,6 @@
   .img-wrapper {
     flex: 0 0 auto;
     width: 50%;
-    margin-top: 216.2309rem;
     @include for-phone {
       width: 100%;
     }

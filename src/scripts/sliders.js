@@ -45,6 +45,31 @@ jQuery(document).ready(function ($) {
         $('.testemonials-slider').slick('slickPrev');
     });
 
+    $('#slider-section .slider-wrapper .slider').slick({
+        rows: 0,
+        infinite: false,
+        slidesToShow: 2.2,
+        arrows: false,
+        dots: false,
+        swipeToSlide: true,
+        variableHeight: true,
+        responsive: [{
+            breakpoint: 501,
+            settings: {
+                variableWidth: false,
+                slidesToShow: 1
+            }
+        }]
+    })
+
+    $('#slider-section .top .btns-wrapper .next').on('click', function (e) {
+        e.preventDefault();
+        $('#slider-section .slider-wrapper .slider').slick('slickNext');
+    });
+    $('#slider-section .top .btns-wrapper .prev').on('click', function (e) {
+        e.preventDefault();
+        $('#slider-section .slider-wrapper .slider').slick('slickPrev');
+    });
     if ($(window).width() < 501) {
         $('#product-long-description .wrapper p.decorator').remove();
         $('#product-long-description .wrapper').slick({

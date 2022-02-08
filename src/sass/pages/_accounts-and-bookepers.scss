@@ -1,0 +1,180 @@
+.page-template-accounts-and-bookepers {
+  .hero {
+    margin-top: 144.7807rem;
+  }
+  #intro {
+    margin-top: 131.6188rem;
+    margin-bottom: 212.4703rem;
+    .heading {
+      margin-bottom: 112.8161rem;
+    }
+    p {
+      &:not(:last-of-type) {
+        margin-bottom: 65.8094rem;
+      }
+    }
+  }
+  #listing-section {
+    margin-bottom: 451.2644rem;
+    .heading {
+      color: #1138c6;
+      margin-bottom: 159.8228rem;
+    }
+    .checkmark-list {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      align-content: flex-start;
+      align-items: flex-start;
+      li {
+        flex: 0 0 auto;
+        width: 1421.2386rem;
+        &:not(:last-of-type) {
+          margin-bottom: 94.0134rem;
+        }
+      }
+    }
+  }
+  #integration-section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-content: center;
+    align-items: center;
+    margin-bottom: 300.8429rem;
+    .img-wrapper {
+      width: 1421.4828rem;
+      height: 1344.3918rem;
+      flex: 0 0 auto;
+    }
+    .col {
+      flex: 0 0 auto;
+      width: 1355.6734rem;
+      .heading {
+        margin-bottom: 116.5766rem;
+      }
+      p {
+        &:not(:last-of-type) {
+          margin-bottom: 65.8094rem;
+        }
+      }
+      .btn {
+        margin-top: 112.8161rem;
+      }
+    }
+  }
+  #slider-section {
+    position: relative;
+    padding-bottom: 408.0182rem;
+    &::after {
+      content: "";
+      position: absolute;
+      left: -50rem;
+      bottom: 0;
+      width: calc(100% + 50rem);
+      background: linear-gradient(
+        159.89deg,
+        #ebf1ff 13.4%,
+        rgba(198, 202, 231, 0) 37.79%
+      );
+      height: 50%;
+      z-index: -1;
+      @include rotate(3.95);
+    }
+    .top {
+      display: flex;
+      justify-content: space-between;
+      align-content: center;
+      align-items: center;
+      flex-wrap: wrap;
+      flex-direction: row;
+      margin-bottom: 150.4215rem;
+      padding-left: var(--side-padding);
+      padding-right: var(--side-padding);
+      .heading {
+        max-width: 60%;
+      }
+      .btns-wrapper {
+        @include for-phone {
+          display: none;
+        }
+        a {
+          @include borderRadius(50%);
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          color: #fff;
+          font-size: 26.3238rem;
+          width: 120.3372rem;
+          height: 120.3372rem;
+          background: linear-gradient(0deg, #1949f6 8.3%, #5676fd 100%);
+          &:hover {
+            background: linear-gradient(180deg, #1949f6 8.3%, #5676fd 100%);
+          }
+          &:not(:last-of-type) {
+            margin-right: 37.6054rem;
+          }
+        }
+      }
+    }
+    .slider-wrapper {
+      margin-left: var(--side-padding);
+      .slider {
+        .slick-slide {
+          margin: 0 28.204rem;
+          @include for-phone {
+            margin: 0 200rem;
+          }
+        }
+        .slick-list {
+          margin: 0 -28.204rem;
+          @include for-phone {
+            margin: 0 -200rem;
+          }
+        }
+        .slick-track {
+          display: flex !important;
+          align-items: stretch;
+          align-content: center;
+          .single-slide {
+            @include borderRadius(13.1619rem);
+            padding: 203.069rem 165.4636rem 154.182rem 167.3439rem;
+            box-shadow: 0px 94.0134rem 150.4215rem rgba(85, 101, 249, 0.25);
+            position: relative;
+            height: inherit;
+            background: #fff;
+            .img-wrapper {
+              position: absolute;
+              top: 65.8094rem;
+              right: 112.8161rem;
+              width: 319.6456rem;
+              height: 319.6456rem;
+              img {
+                @include fullSizeImg(contain);
+              }
+            }
+            h5 {
+              font-size: 58.2883rem;
+              margin-bottom: 47.0067rem;
+              font-weight: $semiBold;
+              color: #000;
+            }
+            p {
+              color: #4d4f63;
+              font-size: 37.6054rem;
+              &:not(:last-of-type) {
+                margin-bottom: 56.408rem;
+              }
+            }
+            .btn {
+              font-size: 33.8448rem;
+              padding: 39.4856rem 88.3726rem;
+              line-height: 1;
+              margin-top: 101.5345rem;
+            }
+          }
+        }
+      }
+    }
+  }
+}
