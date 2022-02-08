@@ -45,11 +45,17 @@ get_header(); ?>
             echo "<ul>";
             foreach ($terms as $term) {
                 echo "<li>" . $term->name . "</li>";
+                echo "<pre>";
+                print_r($term);
+                exit();
             }
             echo "</ul>";
         }
 
         ?>
+        <ul id="support-accordion">
+            <!-- Api Call -->
+        </ul>
     </div>
 </main>
 
