@@ -1,0 +1,113 @@
+.page-template-ecommerce {
+  .hero {
+    margin-top: 225.6322rem;
+    margin-bottom: 84.6121rem;
+    .content {
+      width: 1748.6495rem;
+    }
+    .img-wrapper {
+      margin-top: 0;
+      height: 1209.0125rem;
+      width: 1034.1476rem;
+    }
+  }
+  #intro {
+    margin-bottom: 244.4349rem;
+    .heading {
+      margin-bottom: 131.6188rem;
+      max-width: 1870.8669rem;
+    }
+  }
+  #short-description {
+    margin-bottom: 338.4483rem;
+    header {
+      max-width: 100%;
+      margin-bottom: 178.6255rem;
+      .heading {
+        margin-bottom: 142.9004rem;
+      }
+      p {
+        &:not(:last-of-type) {
+          margin-bottom: 65.8094rem;
+        }
+      }
+    }
+    .wrapper {
+      .image-box {
+        h5 {
+          font-size: 41.3659rem;
+          color: #000;
+          font-weight: $semiBold;
+          margin-bottom: 48.887rem;
+        }
+        p {
+          font-size: 30.0843rem;
+          color: #000;
+          line-height: 1.5;
+          font-weight: $regular;
+        }
+      }
+    }
+  }
+  .content-boxes {
+    .row {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      align-items: center;
+      align-content: center;
+      flex-direction: row;
+      margin-bottom: 357.251rem;
+      .img-wrapper {
+        flex: 0 0 auto;
+      }
+      .col {
+        flex: 0 0 auto;
+        h6 {
+          font-size: 33.8448rem;
+          font-weight: $semiBold;
+          letter-spacing: 0.02em;
+          margin-bottom: 116.5766rem;
+          color: #2823a8;
+          text-transform: uppercase;
+        }
+        .heading {
+          color: #000;
+          margin-bottom: 137.2596rem;
+        }
+        p {
+          &:not(:last-of-type) {
+            margin-bottom: 65.8094rem;
+          }
+        }
+      }
+      &:nth-of-type(1) {
+        .col {
+          width: 1402.6801rem;
+        }
+        .img-wrapper {
+          width: 1393.2788rem;
+          height: 1092.4359rem;
+        }
+      }
+      &:nth-of-type(2) {
+        .col {
+          width: 1366.955rem;
+        }
+        .img-wrapper {
+          width: 1344.3918rem;
+          height: 1421.4828rem;
+        }
+      }
+    }
+  }
+  #outro {
+    margin-bottom: 188.0268rem;
+    .heading {
+      margin-bottom: 99.6542rem;
+    }
+    p {
+      color: #333;
+    }
+  }
+}

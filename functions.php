@@ -154,10 +154,10 @@ add_action('widgets_init', 'starter_widgets_init');
  */
 function starter_scripts()
 {
-    wp_register_style('style', get_template_directory_uri() . '/dist/css/app.min.css', [], 1, 'all');
+    wp_register_style('style', get_template_directory_uri() . '/dist/css/app.css', [], 1, 'all');
     wp_enqueue_style('style');
 
-    wp_register_script('app', get_template_directory_uri() . '/dist/js/app.min.js', ['jquery'], 1, true);
+    wp_register_script('app', get_template_directory_uri() . '/dist/js/app.js', ['jquery'], 1, true);
     wp_enqueue_script('app');
 }
 add_action('wp_enqueue_scripts', 'starter_scripts');
