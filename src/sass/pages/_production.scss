@@ -9,4 +9,168 @@
       }
     }
   }
+  #intro {
+    margin-bottom: 263.2376rem;
+    h3 {
+      margin-bottom: 112.8161rem;
+    }
+    p {
+      &:not(:last-of-type) {
+        margin-bottom: 65.8094rem;
+      }
+    }
+  }
+  #listing-section {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: flex-start;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 300.8429rem;
+    h3 {
+      flex: 0 0 100%;
+      width: 100%;
+      font-size: 82.7318rem;
+      color: #1138c6;
+      font-weight: $semiBold;
+      margin-bottom: 150.4215rem;
+    }
+    .col {
+      flex: 0 0 auto;
+      width: 50%;
+      .checkmark-list {
+        max-width: 1410rem;
+        li {
+          color: #000;
+          font-size: 41.3659rem;
+          &:not(:last-of-type) {
+            margin-bottom: 65.8094rem;
+          }
+        }
+      }
+      p {
+        font-weight: $regular;
+        font-size: 41.3659rem;
+        color: #333;
+        max-width: 1355.6734rem;
+        &:not(:last-of-type) {
+          margin-bottom: 65.8094rem;
+        }
+      }
+    }
+  }
+  #image-section {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: flex-start;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 300.8429rem;
+    padding-left: var(--side-padding);
+    .col {
+      flex: 0 0 auto;
+      width: 1366.955rem;
+      .heading {
+        margin-bottom: 75.2107rem;
+      }
+      .checkmark-list {
+        margin-top: 103.4148rem;
+        li {
+          &:not(:last-of-type) {
+            margin-bottom: 65.8094rem;
+          }
+        }
+      }
+    }
+    .img-wrapper {
+      margin-left: -37.6054rem;
+      position: relative;
+      flex: 0 0 auto;
+      width: 1927.275rem;
+      height: 1444.046rem;
+      &::before {
+        content: "";
+        position: absolute;
+        right: -160rem;
+        top: 50rem;
+        @include borderRadius(210.59rem);
+        @include rotate(13.75);
+        width: 1591.9855rem;
+        height: 1591.9855rem;
+        background: linear-gradient(
+          159.89deg,
+          #d9e1fd 13.4%,
+          rgba(198, 202, 231, 0) 37.79%
+        );
+        z-index: -1;
+      }
+    }
+  }
+  #second-image-section {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 282.0402rem;
+    margin-bottom: 188.0268rem;
+    position: relative;
+    &::before {
+      content: "";
+      position: absolute;
+      right: 0;
+      top: -180rem;
+      width: 772.7903rem;
+      height: 436.2222rem;
+      background: url("../../assets/icons/airplane-with-line.svg");
+      @include bg-props(cover, center, no-repeat);
+    }
+    &::after {
+      content: "";
+      position: absolute;
+      bottom: 0;
+      right: 225.6322rem;
+      width: 212.9028rem;
+      height: 212.9028rem;
+      background: url("../../assets/icons/dotted-decoration-horizontal.svg");
+      @include bg-props(520rem, center, no-repeat);
+    }
+    .img-wrapper {
+      flex: 0 0 auto;
+      width: 1344.3918rem;
+      height: 1421.4828rem;
+      position: relative;
+      &::before {
+        content: "";
+        position: absolute;
+        left: -332rem;
+        bottom: 18.8027rem;
+        width: 520.8343rem;
+        height: 233.1533rem;
+        background: url("../../assets/icons/line-deco.svg");
+        @include bg-props(contain, center, no-repeat);
+        z-index: -1;
+      }
+    }
+    .col {
+      flex: 0 0 auto;
+      width: 1316.1878rem;
+      .heading {
+        margin-bottom: 75.2107rem;
+        line-height: 1.3;
+      }
+      p {
+        line-height: 1.5;
+        &:not(:last-of-type) {
+          margin-bottom: 65.8094rem;
+        }
+      }
+      .btn {
+        margin-top: 122.2174rem;
+      }
+    }
+  }
 }
