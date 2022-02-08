@@ -39,7 +39,7 @@ jQuery(document).ready(function ($) {
         let apiLoader = `<div id="apiLoader"><i class="fas fa-spinner"></i></div>`;
         $(".filterable-apps .filterable-results").html(apiLoader);
         axios
-            .get("/wp-json/wp/v2/projects?per_page=100&?project_category=" + filterParam)
+            .get("/wp-json/wp/v2/projects?project_category=" + filterParam + "&per_page=100")
             .then((response) => {
                 let projectData = response.data;
                 const projectsHtml = projectData.map((project) => {
