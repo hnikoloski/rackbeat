@@ -223,12 +223,12 @@ function filter_plugin_updates($value)
 add_filter('site_transient_update_plugins', 'filter_plugin_updates');
 
 //Remove Gutenberg Block Library CSS from loading on the frontend
-function smartwp_remove_wp_block_library_css()
-{
-    wp_dequeue_style('wp-block-library');
-    wp_dequeue_style('wp-block-library-theme');
-}
-add_action('wp_enqueue_scripts', 'smartwp_remove_wp_block_library_css', 100);
+// function smartwp_remove_wp_block_library_css()
+// {
+//     wp_dequeue_style('wp-block-library');
+//     wp_dequeue_style('wp-block-library-theme');
+// }
+// add_action('wp_enqueue_scripts', 'smartwp_remove_wp_block_library_css', 100);
 
 
 // Calculate time ago
