@@ -1,5 +1,6 @@
 .page-template-integrations {
   .filterable-apps {
+    margin-bottom: 203.069rem;
     .wrapper {
       background: linear-gradient(
         183.32deg,
@@ -84,6 +85,100 @@
           }
         }
       }
+    }
+  }
+  #short-description {
+    margin-bottom: 188.0268rem;
+    .heading {
+      margin-bottom: 131.6188rem;
+    }
+    p {
+      &:not(:last-of-type) {
+        margin-bottom: 65.8094rem;
+      }
+    }
+  }
+  #listing-section {
+    margin-bottom: 263.2376rem;
+    position: relative;
+    &::after {
+      content: "";
+      position: absolute;
+      width: 212.4703rem;
+      height: 212.4703rem;
+      bottom: -228rem;
+      right: 216.2309rem;
+      background: url("../../assets/icons/dotted-purple-decoration.svg");
+      @include bg-props(cover, center, no-repeat);
+    }
+    .heading {
+      margin-bottom: 188.0268rem;
+    }
+    .checkmark-list {
+      li {
+        flex: 0 0 auto;
+        width: 1268.2386rem;
+        margin-bottom: 82.7318rem;
+        &:nth-of-type(odd) {
+          margin-right: 338.4483rem;
+        }
+      }
+    }
+  }
+  #content-section {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-content: center;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 376.0537rem;
+    .col {
+      flex: 0 0 auto;
+      width: 1316.1878rem;
+      .heading {
+        margin-bottom: 107.1753rem;
+      }
+      p {
+        &:not(:last-of-type) {
+          margin-bottom: 65.8094rem;
+        }
+      }
+    }
+    .img-wrapper {
+      width: 1243.459rem;
+      height: 1340.9697rem;
+    }
+    &.no-image {
+      text-align: center;
+      .col {
+        flex: 0 0 100%;
+        width: 100%;
+      }
+    }
+  }
+  #outro {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-end;
+    align-content: flex-end;
+    flex-wrap: wrap;
+    margin-bottom: 376.0537rem;
+    .col {
+      flex: 0 0 auto;
+      width: 2331.5327rem;
+      .heading {
+        margin-bottom: 101.5345rem;
+      }
+      p {
+        max-width: 1897.1907rem;
+        &:not(:last-of-type) {
+          margin-bottom: 65.8094rem;
+        }
+      }
+    }
+    .btn {
+      flex: 0 0 auto;
     }
   }
 }

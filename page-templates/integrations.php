@@ -34,7 +34,7 @@ get_template_part('template-parts/hero-inner');
 <section id="listing-section" class="page-padding-x">
     <h3 class="heading"><?php the_field('listing_section_title'); ?></h3>
     <?php if (have_rows('checkmark_list')) : ?>
-        <ul class="checkmark-list">
+        <ul class="checkmark-list d-flex flex-wrap align-content-start justify-content-start align-items-start">
             <?php while (have_rows('checkmark_list')) : the_row();
                 $listItem = get_sub_field('list_item');
             ?>
@@ -42,5 +42,31 @@ get_template_part('template-parts/hero-inner');
             <?php endwhile; ?>
         </ul>
     <?php endif; ?>
+</section>
+<?php
+$image = get_field('content_section_image');
+if (empty($image)) {
+    $hasImage = 'no-image';
+} else {
+    $hasImage = 'has-image';
+}
+?>
+<section id="content-section" class="page-padding-x <?= $hasImage; ?>">
+    <div class="col">
+        <h3 class="heading"><?php the_field('content_section_title'); ?></h3>
+        <?php the_field('content_section_content'); ?>
+    </div>
+    <?php if (get_field('content_section_image')) : ?>
+        <div class="img-wrapper">
+            <img src="<?php the_field('content_section_image'); ?>" alt="<?php the_field('content_section_title'); ?>" class="full-size-img full-size-img-cover">
+        </div>
+    <?php endif; ?>
+</section>
+<section id="outro" class="page-padding-x">
+    <div class="col">
+        <h3 class="heading"><?php the_field('outro_section_title'); ?></h3>
+        <?php the_field('outro_section_content'); ?>
+    </div>
+    <a href="<?php the_field('outro_section_btn_url'); ?>" class="btn gradient-bg w-fit-content"><?php the_field('outro_section_btn_txt'); ?></a>
 </section>
 <?php get_footer(); ?>
