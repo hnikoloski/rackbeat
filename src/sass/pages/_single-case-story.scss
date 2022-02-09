@@ -44,6 +44,7 @@ body.single-case-stories {
     }
     article {
       position: relative;
+      margin-bottom: 188.0268rem;
       &::after {
         content: "";
         position: absolute;
@@ -53,6 +54,64 @@ body.single-case-stories {
         height: 403.1107rem;
         background: url("../../assets/icons/dotted-purple-decoration.svg");
         @include bg-props(100%, center, no-repeat);
+      }
+      .wp-block-spacer {
+        height: 65.8094rem !important;
+      }
+      b,
+      strong {
+        font-weight: $bold;
+      }
+      p {
+        &:not(:last-of-type) {
+          margin-bottom: 1.5em;
+        }
+        b,
+        strong {
+          font-weight: $bold;
+        }
+      }
+      h1,
+      h2,
+      h3,
+      h4,
+      h5,
+      h6 {
+        margin-bottom: 1em;
+        b,
+        strong {
+          font-weight: $bold;
+        }
+      }
+      blockquote {
+        position: relative;
+        padding: 100rem 150rem;
+        margin: 1.5em 0;
+        b,
+        strong {
+          font-weight: $semiBold;
+        }
+        &::before {
+          content: "";
+          position: absolute;
+          left: 0;
+          top: 0;
+          width: 101.5345rem;
+          height: 75.2107rem;
+          background: url("../../assets/icons/quotes.svg");
+          @include bg-props(contain, center, no-repeat);
+        }
+        &::after {
+          content: "";
+          position: absolute;
+          right: 0;
+          bottom: 0;
+          width: 101.5345rem;
+          height: 75.2107rem;
+          background: url("../../assets/icons/quotes.svg");
+          @include bg-props(contain, center, no-repeat);
+          @include rotate(180);
+        }
       }
     }
   }
