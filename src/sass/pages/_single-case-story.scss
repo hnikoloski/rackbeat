@@ -1,0 +1,59 @@
+body.single-case-stories {
+  #primary {
+    header {
+      display: flex;
+      padding-left: 338.4483rem;
+      padding-right: 470.0671rem;
+      justify-content: space-between;
+      align-items: center;
+      align-content: center;
+      flex-wrap: wrap;
+      flex-direction: row;
+      margin-top: 141.0201rem;
+      margin-bottom: 159.8228rem;
+      position: relative;
+      &::before {
+        content: "";
+        position: absolute;
+        left: 28.204rem;
+        top: 0;
+        width: 212.9028rem;
+        height: 212.9028rem;
+        background: url("../../assets/icons/dotted-purple-decoration.svg");
+        @include bg-props(cover, center, no-repeat);
+      }
+      .col {
+        flex: 0 0 auto;
+        .img-wrapper {
+          width: 404.2577rem;
+          height: 199.3084rem;
+          margin-bottom: 33.8448rem;
+        }
+        .heading {
+          max-width: 1628.3123rem;
+        }
+      }
+      .img-wrapper {
+        flex: 0 0 auto;
+        width: 1058.591rem;
+        height: 654.3334rem;
+        img {
+          @include borderRadius(24.4435rem);
+        }
+      }
+    }
+    article {
+      position: relative;
+      &::after {
+        content: "";
+        position: absolute;
+        top: -56.408rem;
+        right: 84.6121rem;
+        width: 212.9028rem;
+        height: 403.1107rem;
+        background: url("../../assets/icons/dotted-purple-decoration.svg");
+        @include bg-props(100%, center, no-repeat);
+      }
+    }
+  }
+}

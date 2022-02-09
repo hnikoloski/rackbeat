@@ -1,0 +1,334 @@
+.page-template-prices {
+  main {
+    #hero {
+      margin-top: 282.0402rem;
+      margin-bottom: 148.5412rem;
+      h1 {
+        font-weight: $bold;
+        max-width: 2534.6016rem;
+        margin-bottom: 103.4148rem;
+      }
+      .container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: center;
+        align-content: center;
+        .col {
+          flex: 0 0 auto;
+          width: 1109.3583rem;
+          padding-bottom: 477.5881rem;
+          position: relative;
+          &::after {
+            content: "";
+            position: absolute;
+            left: -420rem;
+            bottom: 0;
+            width: 1536.1792rem;
+            height: 477.5881rem;
+            background: url("../../assets/icons/airplane-with-line-mirrored.svg");
+            @include bg-props(cover, center, no-repeat);
+          }
+          .heading {
+            color: #1138c6;
+            margin-bottom: 131.6188rem;
+          }
+          p {
+            margin-bottom: 122.2174rem;
+            &:not(:last-of-type) {
+              margin-bottom: 65.8094rem;
+            }
+            &.quote {
+              font-weight: $bold;
+              color: #1138c6;
+              margin-bottom: 0;
+            }
+          }
+          &-lg {
+            flex: 0 0 auto;
+            width: 1598.228rem;
+            .slick-slide {
+              margin: 0 65.8094rem;
+              @include for-phone {
+                margin: 0 200rem;
+              }
+            }
+            .slick-list {
+              margin: 0 -65.8094rem;
+              overflow: hidden;
+              display: block;
+              position: relative;
+              padding: 0;
+              @include for-phone {
+                margin: 0 -200rem;
+              }
+            }
+            .slick-track {
+              display: flex !important;
+              align-items: stretch;
+              align-content: space-between;
+              .slick-slide {
+                height: inherit !important;
+                min-height: 1430.8842rem;
+              }
+            }
+          }
+        }
+      }
+    }
+    #intro {
+      margin-bottom: 204.9492rem;
+      p {
+        max-width: 2745.1917rem;
+        &:not(:last-of-type) {
+          margin-bottom: 65.8094rem;
+        }
+        &.quote {
+          color: #2823a8;
+          font-weight: $semiBold;
+          margin-bottom: 84.6121rem;
+        }
+      }
+      h3 {
+        margin-bottom: 84.6121rem;
+        font-weight: $bold;
+      }
+    }
+    #content-section {
+      display: flex;
+      flex-wrap: wrap;
+      flex-direction: row;
+      align-content: center;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 253.8362rem;
+      .img-wrapper {
+        position: relative;
+        width: 1293.6246rem;
+        z-index: 1;
+        height: 1455.5533rem;
+        flex: 0 0 auto;
+        &::before {
+          content: "";
+          position: absolute;
+          left: -685.9866rem;
+          top: 92rem;
+          width: 1591.9855rem;
+          height: 1591.9855rem;
+          background: linear-gradient(
+            159.89deg,
+            #d9e1fd 13.4%,
+            rgba(198, 202, 231, 0) 37.79%
+          );
+          pointer-events: none;
+          @include borderRadius(210.59rem);
+          @include rotate(13.75);
+          z-index: -1;
+        }
+      }
+      .col {
+        flex: 0 0 auto;
+        width: 1316.1878rem;
+        p {
+          b,
+          strong {
+            font-weight: $bold;
+          }
+          &:not(:last-of-type) {
+            margin-bottom: 47.0067rem;
+          }
+        }
+        .btn {
+          margin-top: 65.8094rem;
+          font-size: 33.1303rem;
+          padding: 39.4856rem 150.4215rem;
+          line-height: 1;
+        }
+      }
+    }
+    #slider-section {
+      header {
+        margin-bottom: 129.7385rem;
+        p {
+          text-align: center;
+          &.subtitle {
+            margin-bottom: 62.0489rem;
+            font-weight: $semiBold;
+            color: #2c29b0;
+            text-transform: uppercase;
+          }
+        }
+        .heading {
+          margin-bottom: 63.9291rem;
+          font-size: 114.6964rem;
+          font-weight: $bold;
+          text-align: center;
+        }
+      }
+      .slider-wrapper {
+        position: relative;
+        margin-bottom: 376.0537rem;
+
+        .btns-wrapper {
+          position: absolute;
+          @include ver-center();
+          z-index: 9;
+          width: 100%;
+          a {
+            width: 120.3372rem;
+            height: 120.3372rem;
+            background: linear-gradient(180deg, #594aff 0%, #4f40ff 100%);
+            box-shadow: 0px 7.5211rem 37.6054rem rgba(85, 101, 249, 0.25);
+            @include borderRadius(50%);
+            color: #fff;
+            line-height: 120.3372rem;
+            text-align: center;
+            font-size: 45.1264rem;
+          }
+          .prev {
+            left: -210rem;
+            position: absolute;
+          }
+          .next {
+            right: -210rem;
+            position: absolute;
+          }
+        }
+        .slick-slide {
+          margin: 0 23.5034rem;
+          @include for-phone {
+            margin: 0 200rem;
+          }
+        }
+        .slick-list {
+          margin: 0 -23.5034rem;
+          // overflow: hidden;
+          display: block;
+          position: relative;
+          padding: 0;
+          @include for-phone {
+            margin: 0 -200rem;
+          }
+        }
+        .slick-track {
+          display: flex !important;
+          align-items: stretch;
+          align-content: space-between;
+          .slick-slide {
+            height: inherit !important;
+            min-height: 1430.8842rem;
+          }
+        }
+      }
+    }
+    .card {
+      background: #ffffff;
+      box-shadow: 0px 82.8362rem 132.5379rem rgba(50, 48, 104, 0.12);
+      @include borderRadius(11.5971rem);
+      display: flex;
+      flex-direction: column;
+      .top {
+        text-align: center;
+        padding-top: 94.0134rem;
+        padding-bottom: 112.8161rem;
+        position: relative;
+        z-index: 1;
+        &::before {
+          content: "";
+          position: absolute;
+          left: 0;
+          top: 0;
+          width: 100%;
+          height: 100%;
+          z-index: -1;
+          background: linear-gradient(292.41deg, #5997ff 3.83%, #6614fe 96.69%);
+        }
+        &::after {
+          content: "";
+          position: absolute;
+          bottom: -1px;
+          right: 0;
+          -webkit-clip-path: polygon(100% 80%, 0% 100%, 100% 100%);
+          clip-path: polygon(100% 80%, 0% 100%, 100% 100%);
+          background: #fff;
+          width: 100%;
+          height: 100%;
+        }
+        h4 {
+          color: #fff;
+          font-size: 82.7318rem;
+          font-weight: $semiBold;
+          margin-bottom: 17.6933rem;
+          line-height: 1;
+        }
+        h3 {
+          color: #fff;
+          font-weight: $bold;
+          font-size: 114.6964rem;
+          margin-bottom: 9.4013rem;
+          text-transform: uppercase;
+          line-height: 1;
+        }
+
+        p {
+          color: #fff;
+          font-size: 30.0843rem;
+          line-height: 1;
+        }
+      }
+      .main {
+        padding: 28.204rem 80.8515rem;
+        p {
+          position: relative;
+          padding-left: 78.9713rem;
+          font-size: 30.0843rem;
+          &:not(:last-of-type) {
+            margin-bottom: 28.204rem;
+          }
+          &:before {
+            content: "\f00c";
+            font-family: "Font Awesome 5 Pro";
+            text-align: center;
+            color: #5565f9;
+            line-height: 45.1264rem;
+            font-size: 18.8027rem;
+            position: absolute;
+            left: 0;
+            top: 7rem;
+            width: 45.1264rem;
+            height: 45.1264rem;
+            background: rgba(8, 51, 142, 0.15);
+            @include borderRadius(50%);
+          }
+        }
+      }
+      a {
+        display: block;
+        width: calc(100% - 189.9071rem);
+        padding: 37.6054rem;
+        @include borderRadius(5.6408rem);
+        color: #fff;
+        font-size: 33.1303rem;
+        font-weight: $semiBold;
+        letter-spacing: 0.02em;
+        text-align: center;
+        margin-left: 94.0134rem;
+        margin-right: 94.0134rem;
+        margin-bottom: 94.0134rem;
+        margin-top: auto;
+        &.color-green {
+          background: linear-gradient(180deg, #5cebb7 0%, #34be8c 100%);
+        }
+        &.color-purple {
+          background: linear-gradient(
+            137.52deg,
+            #6886c3 -37.59%,
+            #5565f9 4.05%,
+            #1a0f91 84.33%,
+            #5565f9 155.18%
+          );
+        }
+      }
+    }
+  }
+}
