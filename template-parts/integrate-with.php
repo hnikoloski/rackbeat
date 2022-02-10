@@ -10,7 +10,6 @@ $query = new WP_Query($args);
 if ($query->have_posts()) {
 ?>
     <section id="integrate-with" class="white-bg">
-        <div class="dust dust-right-side dust-no-space"></div>
         <div class="container slick-slider">
             <?php
             while ($query->have_posts()) {

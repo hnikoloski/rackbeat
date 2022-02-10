@@ -43,6 +43,9 @@
         }
         &:hover {
           color: #fff;
+          @include for-phone {
+            color: #6557ff;
+          }
           &::after {
             height: calc(7.5211rem + 100%);
             width: 100%;
@@ -213,6 +216,12 @@
     padding-left: var(--side-padding);
     position: relative;
     overflow: hidden;
+    @include for-phone {
+      padding-right: var(--side-padding);
+      padding-top: 2340rem;
+      margin-top: 200rem;
+      padding-bottom: 380rem;
+    }
     &::before {
       content: "";
       position: absolute;
@@ -224,6 +233,12 @@
       height: 1387.9752rem;
       z-index: -1;
       pointer-events: none;
+      @include for-phone {
+        bottom: auto;
+        top: 0;
+        width: 100%;
+        height: 3985rem;
+      }
     }
     &::after {
       content: "";
@@ -235,15 +250,32 @@
       width: 1508.906rem;
       height: 938.9282rem;
       z-index: -1;
+      @include for-phone {
+        bottom: 0;
+        width: 100%;
+        height: 1710rem;
+      }
     }
     .content {
       width: 1900.9512rem;
       flex: 0 0 1900.9512rem;
+      @include for-phone {
+        flex: 0 0 auto;
+        width: 100%;
+        position: relative;
+        z-index: 1;
+      }
       h3 {
         margin-bottom: 62.0489rem;
+        @include for-phone {
+          margin-bottom: 300rem;
+        }
       }
       p {
         margin-bottom: 116.5766rem;
+        @include for-phone {
+          margin-bottom: 340rem;
+        }
       }
     }
     .img-wrapper {
@@ -252,6 +284,14 @@
       position: absolute;
       @include ver-center();
       right: -80rem;
+      @include for-phone {
+        width: 2739rem;
+        margin-left: auto;
+        right: calc(var(--side-padding) * -1);
+        height: 2228rem;
+        @include rm-transform();
+        position: relative;
+      }
     }
   }
 }

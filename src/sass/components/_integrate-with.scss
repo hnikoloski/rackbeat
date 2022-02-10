@@ -7,6 +7,7 @@
   margin-right: var(--side-padding);
   @include for-phone {
     padding: 230rem 250rem;
+    margin-bottom: 600rem;
   }
   .container {
     background: #fff;

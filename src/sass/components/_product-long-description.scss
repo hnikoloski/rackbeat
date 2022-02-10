@@ -219,6 +219,7 @@
     &.slick-slider {
       @include for-phone {
         overflow: hidden;
+        padding-bottom: 150rem;
         .slick-track {
           display: flex !important;
           align-items: center;

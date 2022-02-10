@@ -1,5 +1,6 @@
 <section id="product-long-description" class="page-padding-x">
-    <header>
+    <header class="pos-r">
+        <div class="dust dust-left-side dust-no-space"></div>
         <?php if (get_field('product_description_title')) : ?>
             <h3 class="heading"><?php the_field('product_description_title'); ?></h3>
         <?php endif; ?>

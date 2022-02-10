@@ -4,9 +4,13 @@
     max-width: 60%;
     @include for-phone {
       max-width: 100%;
+      margin-bottom: 350rem;
     }
     h3 {
       margin-bottom: 103.4148rem;
+      @include for-phone {
+        margin-bottom: 310rem;
+      }
     }
     p {
       margin-bottom: 161.7031rem;

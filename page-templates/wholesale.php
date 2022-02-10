@@ -18,9 +18,7 @@ get_template_part('template-parts/short-description');
         <?php if (get_field('inner_content_header_btn_url')) : ?>
             <a href="<?php the_field('inner_content_header_btn_url'); ?>" class="btn gradient-bg w-fit-content mx-auto"><?php the_field('inner_content_header_btn_text'); ?></a>
         <?php endif; ?>
-        <!-- <?php if (get_field('inner_content_header_title')) : ?>
-            <div class="dust dust-right-side dust-no-space"></div>
-        <?php endif; ?> -->
+
     </header>
     <main class="page-padding-x">
         <div class="content d-flex flex-wrap align-content-center align-items-center justify-content-space-between">
