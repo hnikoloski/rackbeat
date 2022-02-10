@@ -35,7 +35,7 @@ jQuery(document).ready(function ($) {
     $("#cookie-notice").remove();
   } else {
     $("body").append(
-      '<div id="cookie-notice" class="animated fadeInUp"> <p>Our Website uses cookies to improve your experience. Read more at our <a href="/privacy-policy">Privacy Policy</a>.</p> <div class="buttons-wrapper"> <a href="#!" class="accept">Accept</a> <a href="#!" class="decline">Decline</a></div> </div>'
+      '<div id="cookie-notice"> <p>Our Website uses cookies to improve your experience. Read more at our <a href="/privacy-policy">Privacy Policy</a>.</p> <div class="buttons-wrapper"> <a href="#!" class="accept">Accept</a> <a href="#!" class="decline">Decline</a></div> </div>'
     );
     $("#cookie-notice .accept").on("click", function (e) {
       e.preventDefault();
