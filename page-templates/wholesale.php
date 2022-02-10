@@ -29,7 +29,7 @@ get_template_part('template-parts/short-description');
                 <h5 class="heading"><?php the_field('section_title_main'); ?></h5>
                 <p><?php the_field('section_description_main'); ?></p>
                 <?php if (have_rows('section_list_main')) : ?>
-                    <ul class="integration-list">
+                    <ul class="checkmark-list">
                         <?php while (have_rows('section_list_main')) : the_row();
                         ?>
                             <li>

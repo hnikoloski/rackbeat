@@ -1,26 +1,54 @@
 .page-template-wholesale {
+  @include for-phone {
+    .hero {
+      .content {
+        padding-right: 0;
+      }
+    }
+  }
   #inner-content {
     margin-bottom: 413.659rem;
     header {
       margin-bottom: 120.3372rem;
       text-align: center;
+      @include for-phone {
+        margin-bottom: 1000rem;
+      }
       h4 {
         font-weight: $bold;
         margin-bottom: 131.6188rem;
+        @include for-phone {
+          margin-bottom: 320rem;
+        }
       }
     }
     main {
       margin-bottom: 244.4349rem;
       .content {
+        @include for-phone {
+          flex-direction: column;
+        }
         .img-wrapper {
           width: 48%;
           flex: 0 0 48%;
+          @include for-phone {
+            width: 100%;
+            flex: 0 0 100%;
+            order: 2;
+            margin-bottom: 250rem;
+          }
         }
         .col {
           flex: 0 0 auto;
           width: 1366.955rem;
           position: relative;
           padding-bottom: 188.0268rem;
+          @include for-phone {
+            width: 100%;
+            flex: 0 0 100%;
+            order: 1;
+            margin-bottom: 250rem;
+          }
           &::after {
             content: "";
             position: absolute;
@@ -33,30 +61,23 @@
           }
           h5 {
             margin-bottom: 54.5278rem;
+            @include for-phone {
+              margin-bottom: 270rem;
+            }
           }
           p {
             margin-bottom: 56.408rem;
+            @include for-phone {
+              margin-bottom: 320rem;
+            }
           }
           ul {
             li {
-              font-size: 41.3659rem;
-              font-weight: $semiBold;
-              padding-left: 142.9004rem;
-              position: relative;
-              &::before {
-                content: "";
-                position: absolute;
-                @include ver-center();
-                left: 0;
-                width: 82.7318rem;
-                height: 82.7318rem;
-                background-image: url("../../assets/icons/checkmark.svg");
-                @include bg-props(45.1264rem, center, no-repeat);
-                background-color: rgba(86, 118, 253, 0.2);
-                @include borderRadius(50%);
-              }
               &:not(:last-of-type) {
                 margin-bottom: 54.5278rem;
+                @include for-phone {
+                  margin-bottom: 220rem;
+                }
               }
             }
           }
@@ -64,6 +85,9 @@
       }
     }
     footer {
+      @include for-phone {
+        display: block;
+      }
       h6 {
         font-weight: $bold;
         margin-bottom: 338.4483rem;
@@ -73,6 +97,11 @@
         .col {
           flex: 0 0 auto;
           width: 1316.1878rem;
+          @include for-phone {
+            flex: 0 0 100%;
+            width: 100%;
+            margin-bottom: 650rem;
+          }
           h6 {
             margin-bottom: 75.2107rem;
             font-weight: $medium;
@@ -99,6 +128,11 @@
           flex: 0 0 auto;
           width: 1344.3918rem;
           height: 1421.4828rem;
+          @include for-phone {
+            flex: 0 0 100%;
+            width: 100%;
+            height: 3520rem;
+          }
         }
       }
     }

@@ -60,5 +60,8 @@ $logoUrl = wp_get_attachment_image_src($custom_logo_id, 'full');
                     )
                 );
                 ?>
+                <div class="lang-switcher">
+                    <?= do_shortcode('[language-switcher]'); ?>
+                </div>
             </div>
         </header><!-- #masthead -->

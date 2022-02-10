@@ -329,3 +329,16 @@ function expose_ACF_fields($object)
 }
 
 add_action('rest_api_init', 'create_ACF_meta_in_REST');
+
+// Change default flags for the following langs
+
+add_filter('trp_flags_path', 'trpc_flags_path', 10, 2);
+function trpc_flags_path($original_flags_path,  $language_code)
+{
+    $languages_with_custom_flags = array('en_GB', 'da_DK', 'nb_NO', 'sv_SE');
+    if (in_array($language_code, $languages_with_custom_flags)) {
+        return  get_template_directory_uri() . '/assets/flags/';
+    } else {
+        return $original_flags_path;
+    }
+}

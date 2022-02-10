@@ -110,6 +110,9 @@
   &-inner {
     padding-right: var(--side-padding);
     margin-top: 47.0067rem;
+    @include for-phone {
+      margin-bottom: 600rem;
+    }
     .extra {
       margin-bottom: 169.2241rem;
     }

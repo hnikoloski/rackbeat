@@ -225,6 +225,51 @@
       }
     }
   }
+  .lang-switcher {
+    margin-left: 75.2107rem;
+    @include for-phone {
+      display: none !important;
+    }
+    .trp-language-switcher > div {
+      border: none;
+      background-image: none;
+      padding: 0;
+      width: 148.5412rem !important;
+      font-size: 30.0843rem;
+      color: #0a2e66;
+      font-weight: $medium;
+      @include for-phone {
+        display: flex !important;
+        visibility: visible;
+      }
+      > a {
+        color: #0a2e66;
+        font-weight: $medium;
+        padding: 3.7605rem;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        align-content: center;
+        @include for-phone {
+          font-size: 0px;
+        }
+        > img {
+          margin: 0 5.6408rem;
+          width: 58.2883rem;
+          height: 41.6291rem;
+          @include for-phone {
+            width: 310rem;
+            height: 221rem;
+          }
+        }
+        &:not(.trp-ls-disabled-language) {
+          margin-bottom: 18.8027rem;
+          margin-top: 18.8027rem;
+          padding: 0 9.4013rem;
+        }
+      }
+    }
+  }
   &.sticky {
     background: rgba(255, 255, 255, 1);
     .col {
@@ -268,7 +313,7 @@
       height: 100vh;
       overflow-y: auto;
       background: #fff;
-      padding: 200rem;
+      padding: 400rem 200rem 200rem 200rem;
       display: flex;
       flex-direction: row;
       flex-wrap: wrap;

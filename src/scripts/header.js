@@ -34,7 +34,7 @@ jQuery(document).ready(function ($) {
 
         $('.sub-menu-trigger').on('click', function () {
             $(this).toggleClass('active');
-            $('#masthead #mob-menu #primary-menu li').removeClass('active');
+            // $('#masthead #mob-menu #primary-menu li').removeClass('active');
             $(this).parent().parent().toggleClass('active');
             $(this).parent().siblings('.sub-menu').slideToggle()
         })

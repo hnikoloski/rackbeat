@@ -5,6 +5,10 @@ ul {
       font-weight: $semiBold;
       padding-left: 142.9004rem;
       position: relative;
+      @include for-phone {
+        font-size: 180rem;
+        padding-left: 570rem;
+      }
       &::before {
         content: "";
         position: absolute;
@@ -16,6 +20,11 @@ ul {
         @include bg-props(45.1264rem, center, no-repeat);
         background-color: rgba(86, 118, 253, 0.2);
         @include borderRadius(50%);
+        @include for-phone {
+          width: 440rem;
+          height: 440rem;
+          @include bg-props(240rem, center, no-repeat);
+        }
       }
     }
   }
