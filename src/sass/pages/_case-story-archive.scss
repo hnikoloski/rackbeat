@@ -9,7 +9,7 @@
   }
   #primary {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-content: flex-start;
     align-items: flex-start;
     flex-wrap: wrap;
@@ -49,6 +49,45 @@
       .btn {
         padding: 37.6054rem 88.3726rem;
         margin-bottom: 75.2107rem;
+      }
+    }
+  }
+  .pagination {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: center;
+
+    .page {
+      &-numbers {
+        font-size: 33.8448rem;
+        font-weight: $medium;
+        width: 109.0556rem;
+        height: 109.0556rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: #000;
+        transition: color 0s;
+        margin-right: 30.0843rem;
+
+        @include borderRadius(50%);
+        @include for-phone {
+          font-size: 140rem;
+          width: 440rem;
+          height: 440rem;
+        }
+
+        &:hover,
+        &.current {
+          &:not(.dots) {
+            background: #5676fd;
+            background: linear-gradient(270deg, #1949f6 8.3%, #5676fd 100%);
+            color: #fff;
+          }
+        }
       }
     }
   }

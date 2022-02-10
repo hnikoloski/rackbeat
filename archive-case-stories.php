@@ -9,6 +9,8 @@
  */
 
 get_header();
+global $wp_query;
+$paged = (get_query_var('paged')) ? get_query_var('paged') : 1;
 ?>
 <header class="page-padding-x archive-header">
     <h1 class="fw-bold"><?php _e('A Warehouse Management System - with many happy users', 'starter'); ?> </h1>
@@ -19,8 +21,8 @@ get_header();
     $args = array(
         'post_type'              => array('case-stories'),
         'post_status'            => array('publish'),
-        'nopaging'               => true,
-        'posts_per_page'         => '-1',
+        'paged' => $paged,
+        'posts_per_page' => 12,
     );
 
     // The Query
@@ -53,7 +55,33 @@ get_header();
 
     // Restore original Post Data
     wp_reset_postdata();
+
+
+
     ?>
+    <div class="w-100">
+
+        <div class="pagination">
+            <?php
+            echo paginate_links(array(
+                'base'         => str_replace(999999999, '%#%', esc_url(get_pagenum_link(999999999))),
+                'total'        => $query->max_num_pages,
+                'current'      => max(1, get_query_var('paged')),
+                'format'       => '?paged=%#%',
+                'show_all'     => false,
+                'type'         => 'plain',
+                'end_size'     => 1,
+                'mid_size'     => 1,
+                'prev_next'    => false, // change to true if you want to indicate previous and next page
+                'prev_text'    => sprintf('<i></i> %1$s', __('Newer Posts', 'text-domain')),
+                'next_text'    => sprintf('%1$s <i></i>', __('Older Posts', 'text-domain')),
+                'add_args'     => false,
+                'add_fragment' => '',
+            ));
+            ?>
+        </div>
+    </div>
+
 </main><!-- #main -->
 
 <?php
