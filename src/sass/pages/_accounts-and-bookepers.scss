@@ -1,12 +1,24 @@
 .page-template-accounts-and-bookepers {
   .hero {
     margin-top: 144.7807rem;
+    @include for-phone {
+      .content {
+        padding-right: 0;
+        padding-bottom: 100rem;
+      }
+    }
   }
   #intro {
     margin-top: 131.6188rem;
     margin-bottom: 212.4703rem;
+    @include for-phone {
+      margin-bottom: 600rem;
+    }
     .heading {
       margin-bottom: 112.8161rem;
+      @include for-phone {
+        margin-bottom: 370rem;
+      }
     }
     p {
       &:not(:last-of-type) {
@@ -19,6 +31,9 @@
     .heading {
       color: #1138c6;
       margin-bottom: 159.8228rem;
+      @include for-phone {
+        margin-bottom: 500rem;
+      }
     }
     .checkmark-list {
       display: flex;
@@ -26,11 +41,20 @@
       justify-content: space-between;
       align-content: flex-start;
       align-items: flex-start;
+      @include for-phone {
+        display: block;
+      }
       li {
         flex: 0 0 auto;
         width: 1421.2386rem;
         &:not(:last-of-type) {
           margin-bottom: 94.0134rem;
+          @include for-phone {
+            margin-bottom: 220rem;
+          }
+        }
+        @include for-phone {
+          width: 100%;
         }
       }
     }
@@ -42,24 +66,46 @@
     align-content: center;
     align-items: center;
     margin-bottom: 300.8429rem;
+    @include for-phone {
+      flex-direction: column;
+    }
     .img-wrapper {
       width: 1421.4828rem;
       height: 1344.3918rem;
       flex: 0 0 auto;
+      @include for-phone {
+        width: 100%;
+        height: 3350rem;
+        order: 2;
+      }
     }
     .col {
       flex: 0 0 auto;
       width: 1355.6734rem;
+      @include for-phone {
+        width: 100%;
+        flex: 0 0 100%;
+        margin-bottom: 600rem;
+      }
       .heading {
         margin-bottom: 116.5766rem;
+        @include for-phone {
+          margin-bottom: 350rem;
+        }
       }
       p {
         &:not(:last-of-type) {
           margin-bottom: 65.8094rem;
+          @include for-phone {
+            margin-bottom: 300rem;
+          }
         }
       }
       .btn {
         margin-top: 112.8161rem;
+        @include for-phone {
+          margin-top: 390rem;
+        }
       }
     }
   }
@@ -80,6 +126,9 @@
       height: 50%;
       z-index: -1;
       @include rotate(3.95);
+      @include for-phone {
+        left: -200rem;
+      }
     }
     .top {
       display: flex;
@@ -91,8 +140,14 @@
       margin-bottom: 150.4215rem;
       padding-left: var(--side-padding);
       padding-right: var(--side-padding);
+      @include for-phone {
+        margin-bottom: 450rem;
+      }
       .heading {
         max-width: 60%;
+        @include for-phone {
+          max-width: 100%;
+        }
       }
       .btns-wrapper {
         @include for-phone {
@@ -119,6 +174,32 @@
     }
     .slider-wrapper {
       margin-left: var(--side-padding);
+      @include for-phone {
+        margin-right: var(--side-padding);
+        padding-bottom: 880rem;
+        position: relative;
+        &::after {
+          position: absolute;
+          content: "";
+          height: 20rem;
+          width: 110%;
+          background-image: linear-gradient(
+            to right,
+            #6f75ed 33%,
+            rgba(255, 255, 255, 0) 0%
+          );
+          background-position: bottom;
+          background-size: 250rem 20rem;
+          background-repeat: repeat-x;
+          top: auto;
+          transform: none;
+          -moz-transform: none;
+          -webkit-transform: none;
+          bottom: 180rem;
+          left: -5%;
+          z-index: -1;
+        }
+      }
       .slider {
         .slick-slide {
           margin: 0 28.204rem;
@@ -143,12 +224,52 @@
             position: relative;
             height: inherit;
             background: #fff;
+            @include for-phone {
+              padding: 590rem 240rem 530rem 360rem;
+              position: relative;
+              &::after {
+                font-weight: 400;
+                font-family: "Font Awesome 5 Pro";
+                -webkit-font-smoothing: antialiased;
+                font-style: normal;
+                font-variant: normal;
+                text-rendering: auto;
+                line-height: 1;
+                position: absolute;
+                background: #373d9e;
+                background: linear-gradient(270deg, #1949f6 8.3%, #5676fd 100%);
+                border-radius: 50%;
+                -moz-border-radius: 50%;
+                -webkit-border-radius: 50%;
+                display: flex;
+                align-items: center;
+                align-content: center;
+                justify-content: center;
+                text-align: center;
+                color: #fff;
+                z-index: 9;
+                content: "\f061";
+                width: 380rem;
+                height: 380rem;
+                font-size: 140rem;
+                transform: none;
+                -moz-transform: none;
+                -webkit-transform: none;
+                left: 0;
+                bottom: -888rem;
+                z-index: 1;
+              }
+            }
             .img-wrapper {
               position: absolute;
               top: 65.8094rem;
               right: 112.8161rem;
               width: 319.6456rem;
               height: 319.6456rem;
+              @include for-phone {
+                width: 1090rem;
+                height: 800rem;
+              }
               img {
                 @include fullSizeImg(contain);
               }
@@ -158,12 +279,22 @@
               margin-bottom: 47.0067rem;
               font-weight: $semiBold;
               color: #000;
+              @include for-phone {
+                font-size: 220rem;
+                margin-bottom: 250rem;
+              }
             }
             p {
               color: #4d4f63;
               font-size: 37.6054rem;
+              @include for-phone {
+                font-size: 160rem;
+              }
               &:not(:last-of-type) {
                 margin-bottom: 56.408rem;
+                @include for-phone {
+                  margin-bottom: 300rem;
+                }
               }
             }
             .btn {
@@ -171,6 +302,11 @@
               padding: 39.4856rem 88.3726rem;
               line-height: 1;
               margin-top: 101.5345rem;
+              @include for-phone {
+                margin-top: 490rem;
+                font-size: 140rem;
+                padding: 150rem 390rem;
+              }
             }
           }
         }
