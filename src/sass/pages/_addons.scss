@@ -1,0 +1,187 @@
+.page-template-add-ons {
+  .hero {
+    margin-bottom: 65.8094rem;
+  }
+  #main-content {
+    header {
+      margin-bottom: 120.3372rem;
+      .heading {
+        margin-bottom: 56.408rem;
+      }
+      p {
+        margin-bottom: 0;
+        max-width: 2794.0787rem;
+      }
+    }
+    .container {
+      .row {
+        display: flex;
+        flex-wrap: wrap;
+        align-content: center;
+        align-items: center;
+        justify-content: space-between;
+        margin-bottom: 178.6255rem;
+        .col {
+          flex: 0 0 auto;
+          width: 1316.1878rem;
+          h1,
+          h2,
+          h3,
+          h4,
+          h5,
+          h6 {
+            margin-bottom: 65.8094rem;
+            font-weight: $medium;
+            strong,
+            b {
+              font-weight: $bold;
+            }
+          }
+          p {
+            &:not(:last-of-type) {
+              margin-bottom: 65.8094rem;
+            }
+          }
+          b,
+          strong {
+            font-weight: $bold;
+          }
+          span {
+            font-weight: inherit;
+          }
+        }
+        img {
+          flex: 0 0 auto;
+          width: 1523.0173rem;
+          height: auto;
+          max-height: 1805.0575rem;
+        }
+        &:nth-of-type(odd) {
+          .col {
+            order: 2;
+          }
+          img {
+            order: 1;
+          }
+        }
+        &:nth-of-type(even) {
+          .col {
+            order: 1;
+          }
+          img {
+            order: 2;
+          }
+        }
+      }
+    }
+  }
+  #listing-section {
+    margin-bottom: 219.9914rem;
+    header {
+      margin-bottom: 131.6188rem;
+      .heading {
+        margin-bottom: 73.3305rem;
+      }
+      p {
+        max-width: 2786.5576rem;
+        &:not(:last-of-type) {
+          margin-bottom: 56.408rem;
+        }
+      }
+    }
+    h4 {
+      margin-bottom: 169.2241rem;
+    }
+    .checkmark-list {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: flex-start;
+      align-content: flex-start;
+      justify-content: flex-start;
+      li {
+        flex: 0 0 auto;
+        width: 1192.3583rem;
+        margin-bottom: 110.9358rem;
+        &:nth-of-type(odd) {
+          margin-right: 297.0824rem;
+        }
+      }
+    }
+  }
+  #outro {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    align-content: center;
+    flex-wrap: wrap;
+    margin-bottom: 336.568rem;
+    position: relative;
+    &::before {
+      content: "";
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      background: url("../../assets/icons/ending-left-deco.svg");
+      background-size: 100%;
+      background-position: 30% 0;
+      background-repeat: no-repeat;
+      width: 1318.906rem;
+      height: 1567.9752rem;
+      z-index: -1;
+      pointer-events: none;
+    }
+    &::after {
+      content: "";
+      position: absolute;
+      bottom: -90rem;
+      right: 0;
+      background: url("../../assets/icons/ending-right-deco.svg");
+      background-size: cover;
+      background-position: 0% 0%;
+      background-repeat: no-repeat;
+      width: 1508.906rem;
+      height: 938.9282rem;
+      z-index: -1;
+    }
+    .col {
+      width: 1271.0614rem;
+      flex: 0 0 auto;
+      .heading {
+        margin-bottom: 94.0134rem;
+      }
+      p {
+        &:not(:last-of-type) {
+          margin-bottom: 65.8094rem;
+        }
+      }
+    }
+    .img-wrapper {
+      flex: 0 0 auto;
+      width: 1429.0039rem;
+      height: 1282.6814rem;
+      position: relative;
+      &::before {
+        content: "";
+        position: absolute;
+        width: 869.4925rem;
+        height: 390.6633rem;
+        background: url("../../assets/icons/line-deco.svg");
+        @include bg-props(contain, center, no-repeat);
+        top: 180rem;
+        right: -360rem;
+        z-index: -1;
+        @include transform(scaleX(-1));
+      }
+      &::after {
+        content: "";
+        position: absolute;
+        width: 169.1301rem;
+        height: 93.9006rem;
+        background: url("../../assets/icons/dotted-decoration-horizontal.svg");
+        @include bg-props(cover, center, no-repeat);
+        bottom: -100rem;
+        right: 0;
+      }
+    }
+  }
+}
