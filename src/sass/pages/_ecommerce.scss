@@ -2,20 +2,74 @@
   .hero {
     margin-top: 225.6322rem;
     margin-bottom: 84.6121rem;
+    @include for-phone {
+      margin-bottom: 500rem;
+    }
     .content {
       width: 1748.6495rem;
+      @include for-phone {
+        width: 100%;
+        flex: 0 0 100%;
+        padding-right: 0;
+        margin-bottom: 420rem;
+        @include for-phone {
+          &::after {
+            display: none;
+          }
+        }
+        .btn {
+          font-size: 150rem;
+          padding: 200rem 230rem;
+          margin-left: auto;
+          margin-right: auto;
+          width: 100%;
+        }
+      }
     }
     .img-wrapper {
       margin-top: 0;
       height: 1209.0125rem;
       width: 1034.1476rem;
+      @include for-phone {
+        flex: 0 0 100%;
+        width: 2520rem;
+        height: 2950rem;
+        position: relative;
+        &::after {
+          content: "";
+          position: absolute;
+          right: 0;
+          top: 500rem;
+          background: url("../../assets/icons/dotted-purple-decoration-small.svg");
+          background-size: cover;
+          background-position: center;
+          background-repeat: no-repeat;
+          width: 170rem;
+          height: 509rem;
+        }
+      }
     }
   }
   #intro {
     margin-bottom: 244.4349rem;
+    @include for-phone {
+      margin-bottom: 600rem;
+    }
     .heading {
       margin-bottom: 131.6188rem;
       max-width: 1870.8669rem;
+      @include for-phone {
+        max-width: 100%;
+        margin-bottom: 370rem;
+      }
+    }
+    p {
+      &:not(:last-of-type) {
+        margin-bottom: 65.8094rem;
+        @include for-phone {
+          margin-bottom: 320rem;
+        }
+      }
     }
   }
   #short-description {
@@ -25,26 +79,47 @@
       margin-bottom: 178.6255rem;
       .heading {
         margin-bottom: 142.9004rem;
+        @include for-phone {
+          margin-bottom: 400rem;
+        }
       }
       p {
         &:not(:last-of-type) {
           margin-bottom: 65.8094rem;
+          @include for-phone {
+            margin-bottom: 300rem;
+          }
         }
       }
     }
     .wrapper {
       .image-box {
+        @include for-phone {
+          padding-bottom: 390rem;
+        }
         h5 {
           font-size: 41.3659rem;
           color: #000;
           font-weight: $semiBold;
           margin-bottom: 48.887rem;
+          @include for-phone {
+            font-size: 220rem;
+            margin-bottom: 260rem;
+            margin-top: 400rem;
+          }
         }
         p {
           font-size: 30.0843rem;
           color: #000;
           line-height: 1.5;
           font-weight: $regular;
+          @include for-phone {
+            font-size: 160rem;
+            margin-bottom: 0;
+            padding-left: 0;
+            padding-right: 0;
+            text-align: left;
+          }
         }
       }
     }
@@ -58,8 +133,14 @@
       align-content: center;
       flex-direction: row;
       margin-bottom: 357.251rem;
+      @include for-phone {
+        flex-direction: column;
+      }
       .img-wrapper {
         flex: 0 0 auto;
+        @include for-phone {
+          margin-top: 500rem;
+        }
       }
       .col {
         flex: 0 0 auto;
@@ -70,44 +151,83 @@
           margin-bottom: 116.5766rem;
           color: #2823a8;
           text-transform: uppercase;
+          @include for-phone {
+            font-size: 140rem;
+            margin-bottom: 420rem;
+          }
         }
         .heading {
           color: #000;
           margin-bottom: 137.2596rem;
+          @include for-phone {
+            margin-bottom: 420rem;
+          }
         }
         p {
           &:not(:last-of-type) {
             margin-bottom: 65.8094rem;
+            @include for-phone {
+              margin-bottom: 350rem;
+            }
           }
         }
       }
       &:nth-of-type(1) {
         .col {
           width: 1402.6801rem;
+          @include for-phone {
+            width: 100%;
+            flex: 0 0 100%;
+          }
         }
         .img-wrapper {
           width: 1393.2788rem;
           height: 1092.4359rem;
+          @include for-phone {
+            width: 100%;
+            flex: 0 0 100%;
+          }
         }
       }
       &:nth-of-type(2) {
         .col {
           width: 1366.955rem;
+          @include for-phone {
+            width: 100%;
+            flex: 0 0 100%;
+            order: 1;
+          }
         }
         .img-wrapper {
           width: 1344.3918rem;
           height: 1421.4828rem;
+          @include for-phone {
+            width: 100%;
+            flex: 0 0 100%;
+            order: 2;
+          }
         }
       }
     }
   }
   #outro {
     margin-bottom: 188.0268rem;
+    @include for-phone {
+      margin-bottom: 550rem;
+    }
     .heading {
       margin-bottom: 99.6542rem;
+      @include for-phone {
+        margin-bottom: 270rem;
+      }
     }
     p {
       color: #333;
+      @include for-phone {
+        &:not(:last-of-type) {
+          margin-bottom: 300rem;
+        }
+      }
     }
   }
 }
