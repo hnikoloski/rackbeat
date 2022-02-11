@@ -11,6 +11,7 @@
   margin-top: 216.2309rem;
   @include for-phone {
     margin-bottom: 240rem;
+    padding-right: var(--side-padding);
   }
   &::after {
     content: "";
@@ -49,7 +50,6 @@
       width: 100%;
       margin-top: 373rem;
       margin-bottom: 240rem;
-      padding-right: var(--side-padding);
       position: relative;
       &::after {
         content: "";

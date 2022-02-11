@@ -331,7 +331,6 @@ function expose_ACF_fields($object)
 add_action('rest_api_init', 'create_ACF_meta_in_REST');
 
 // Change default flags for the following langs
-
 add_filter('trp_flags_path', 'trpc_flags_path', 10, 2);
 function trpc_flags_path($original_flags_path,  $language_code)
 {
