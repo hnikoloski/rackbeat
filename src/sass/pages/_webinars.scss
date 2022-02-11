@@ -151,8 +151,8 @@
               -webkit-appearance: none; /* Safari and Chrome */
               appearance: none;
               position: relative;
-              background: url("http://cdn1.iconfinder.com/data/icons/cc_mono_icon_set/blacks/16x16/br_down.png")
-                no-repeat 95% 55% #f4f1fb;
+              background: url("../../assets/icons/br-down.png") no-repeat 95%
+                55% #f4f1fb;
               @include for-phone {
                 padding: 140rem 270rem;
                 font-size: 140rem;
