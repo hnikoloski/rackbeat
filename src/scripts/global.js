@@ -1,5 +1,8 @@
 jQuery(document).ready(function ($) {
-  $("a[href='nolink']").on("click", function (e) {
+  $("a[href='https://nolink']").on("click", function (e) {
+    e.preventDefault();
+  });
+  $("a[href='http://nolink']").on("click", function (e) {
     e.preventDefault();
   });
   //Cookie Functions
