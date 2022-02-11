@@ -26,6 +26,9 @@ h1 {
 }
 h2 {
   font-size: 94.0134rem;
+  @include for-phone {
+    font-size: 300rem;
+  }
 }
 h3 {
   font-size: 84.6121rem;

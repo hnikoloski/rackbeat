@@ -104,6 +104,9 @@
             &:hover {
               color: #fff;
               text-decoration: underline;
+              @include for-phone {
+                text-decoration: none;
+              }
             }
           }
         }
@@ -121,6 +124,9 @@
               }
               &:hover {
                 text-decoration: underline;
+                @include for-phone {
+                  text-decoration: none;
+                }
               }
             }
           }

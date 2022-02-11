@@ -12,6 +12,13 @@ body.single-case-stories {
       margin-top: 141.0201rem;
       margin-bottom: 159.8228rem;
       position: relative;
+      @include for-phone {
+        flex-direction: column;
+        padding-left: var(--side-padding);
+        padding-right: var(--side-padding);
+        margin-bottom: 470rem;
+        margin-top: 690rem;
+      }
       &::before {
         content: "";
         position: absolute;
@@ -21,24 +28,48 @@ body.single-case-stories {
         height: 212.9028rem;
         background: url("../../assets/icons/dotted-purple-decoration.svg");
         @include bg-props(cover, center, no-repeat);
+        @include for-phone {
+          display: none;
+        }
       }
       .col {
         flex: 0 0 auto;
+        @include for-phone {
+          flex: 0 0 100%;
+          width: 100%;
+        }
         .img-wrapper {
           width: 404.2577rem;
           height: 199.3084rem;
           margin-bottom: 33.8448rem;
+          @include for-phone {
+            width: 940rem;
+            height: 470rem;
+            margin-bottom: 200rem;
+          }
         }
         .heading {
           max-width: 1628.3123rem;
+          @include for-phone {
+            max-width: 100%;
+            margin-bottom: 460rem;
+          }
         }
       }
       .img-wrapper {
         flex: 0 0 auto;
         width: 1058.591rem;
         height: 654.3334rem;
+        @include for-phone {
+          width: 100%;
+          height: auto;
+        }
         img {
           @include borderRadius(24.4435rem);
+          @include fullSizeImg(cover);
+          @include for-phone {
+            @include borderRadius(70rem);
+          }
         }
       }
     }
@@ -54,6 +85,9 @@ body.single-case-stories {
         height: 403.1107rem;
         background: url("../../assets/icons/dotted-purple-decoration.svg");
         @include bg-props(100%, center, no-repeat);
+        @include for-phone {
+          display: none;
+        }
       }
       .wp-block-spacer {
         height: 65.8094rem !important;
@@ -87,6 +121,9 @@ body.single-case-stories {
         position: relative;
         padding: 100rem 150rem;
         margin: 1.5em 0;
+        @include for-phone {
+          padding: 300rem 254rem;
+        }
         b,
         strong {
           font-weight: $semiBold;
@@ -100,6 +137,10 @@ body.single-case-stories {
           height: 75.2107rem;
           background: url("../../assets/icons/quotes.svg");
           @include bg-props(contain, center, no-repeat);
+          @include for-phone {
+            width: 380rem;
+            height: 280rem;
+          }
         }
         &::after {
           content: "";
@@ -111,6 +152,10 @@ body.single-case-stories {
           background: url("../../assets/icons/quotes.svg");
           @include bg-props(contain, center, no-repeat);
           @include rotate(180);
+          @include for-phone {
+            width: 380rem;
+            height: 280rem;
+          }
         }
       }
     }
