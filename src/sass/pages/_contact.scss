@@ -11,6 +11,10 @@
   .container {
     padding: 297.0824rem 338.4483rem 338.4483rem 338.4483rem;
     position: relative;
+    @include for-phone {
+      padding-left: var(--side-padding);
+      padding-right: var(--side-padding);
+    }
     &::before {
       content: "";
       position: absolute;
@@ -20,6 +24,9 @@
       height: 244.1152rem;
       background: url("../../assets/icons/dotted-purple-decoration.svg");
       @include bg-props(cover, center, no-repeat);
+      @include for-phone {
+        display: none;
+      }
     }
     &::after {
       content: "";
@@ -30,10 +37,17 @@
       height: 169.1301rem;
       background: url("../../assets/icons/dotted-purple-decoration-small.svg");
       @include bg-props(cover, center, no-repeat);
+      @include for-phone {
+        display: none;
+      }
     }
     .col {
       flex: 0 0 50%;
       width: 50%;
+      @include for-phone {
+        width: 100%;
+        flex: 0 0 100%;
+      }
       &.w-100 {
         width: 100%;
         flex: 0 0 100%;
@@ -45,18 +59,33 @@
         font-size: 114.6964rem;
         font-weight: $bold;
         margin-bottom: 94.0134rem;
+        @include for-phone {
+          font-size: 300rem;
+          margin-bottom: 340rem;
+        }
       }
       .the-content {
         max-width: 1109.3583rem;
         margin-bottom: 159.8228rem;
+        @include for-phone {
+          max-width: 100%;
+          margin-bottom: 550rem;
+        }
       }
       .contact-list {
         margin-bottom: 188.0268rem;
+        @include for-phone {
+          margin-bottom: 570rem;
+        }
         li {
           padding-left: 159.8228rem;
           position: relative;
           color: #000;
           font-size: 37.6054rem;
+          @include for-phone {
+            padding-left: 690rem;
+            font-size: 160rem;
+          }
           a {
             color: #000;
             text-decoration: none;
@@ -69,28 +98,35 @@
             position: absolute;
             left: 0;
             @include ver-center();
-            width: 103.4148rem;
-            height: 103.4148rem;
+            width: 102.4148rem;
+            height: 102.4148rem;
+            @include for-phone {
+              width: 436rem;
+              height: 436rem;
+            }
           }
           &:not(:last-of-type) {
             margin-bottom: 116.5766rem;
+            @include for-phone {
+              margin-bottom: 370rem;
+            }
           }
           &.phone-num {
             &::before {
               background: url("../../assets/icons/phone-circled-icon.svg");
-              @include bg-props(cover, center, no-repeat);
+              @include bg-props(contain, center, no-repeat);
             }
           }
           &.email {
             &::before {
               background: url("../../assets/icons/email-circled-icon.svg");
-              @include bg-props(cover, center, no-repeat);
+              @include bg-props(contain, center, no-repeat);
             }
           }
           &.location {
             &::before {
               background: url("../../assets/icons/location-circled-icon.svg");
-              @include bg-props(cover, center, no-repeat);
+              @include bg-props(contain, center, no-repeat);
             }
           }
         }
@@ -99,19 +135,34 @@
         h6 {
           font-weight: $bold;
           margin-bottom: 75.2107rem;
+          @include for-phone {
+            margin-bottom: 240rem;
+          }
         }
         .wrapper {
           margin-bottom: 300.8429rem;
+          @include for-phone {
+            margin-bottom: 650rem;
+          }
           & > div {
             &:first-of-type {
               margin-right: 235.0335rem;
+              @include for-phone {
+                margin-right: 300rem;
+              }
               .days {
                 font-size: 41.3659rem;
                 margin-bottom: 52.6475rem;
+                @include for-phone {
+                  font-size: 180rem;
+                }
               }
               .hours {
                 font-size: 58.2883rem;
                 font-weight: $bold;
+                @include for-phone {
+                  font-size: 200rem;
+                }
               }
             }
             &:nth-of-type(2) {
@@ -120,6 +171,9 @@
                 font-size: 33.8448rem;
                 letter-spacing: 0.01em;
                 margin-bottom: 52.6475rem;
+                @include for-phone {
+                  font-size: 140rem;
+                }
               }
               .socials {
                 li {
@@ -131,8 +185,15 @@
                     display: block;
                     width: 82.7318rem;
                     height: 82.7318rem;
+                    @include for-phone {
+                      width: 287rem;
+                      height: 287rem;
+                    }
                     &:hover {
                       transform: scale(1.1);
+                      @include for-phone {
+                        transform: scale(1);
+                      }
                     }
                     &-linkedin {
                       background: url("../../assets/icons/linkedin-icon-dark.svg");
@@ -156,12 +217,19 @@
       .map-wrapper {
         width: 100%;
         height: 1145.0834rem;
+        @include for-phone {
+          height: 2270rem;
+          margin-bottom: 350rem;
+        }
         iframe {
           width: 100%;
           height: 100%;
         }
       }
       &.contact-form {
+        @include for-phone {
+          margin-bottom: 700rem;
+        }
         br {
           display: none;
         }
@@ -174,6 +242,10 @@
           margin-bottom: 47.0067rem;
           display: block;
           line-height: 1.2;
+          @include for-phone {
+            font-size: 160rem;
+            margin-bottom: 200rem;
+          }
         }
         input[type="text"],
         input[type="email"] {
@@ -184,6 +256,11 @@
           font-size: 37.6054rem;
           color: #000;
           margin-bottom: 47.0067rem;
+          @include for-phone {
+            padding: 130rem 270rem;
+            margin-bottom: 320rem;
+            font-size: 140rem;
+          }
           &::placeholder {
             color: rgba(0, 0, 0, 0.8);
           }
@@ -200,6 +277,12 @@
           color: #000;
           font-family: $poppins;
           border: none;
+          @include for-phone {
+            padding: 130rem 270rem;
+            margin-bottom: 220rem;
+            font-size: 140rem;
+            height: 1780rem;
+          }
         }
         .btn {
           width: 100%;
@@ -209,6 +292,11 @@
           padding-top: 63.9291rem;
           padding-bottom: 63.9291rem;
           line-height: 1;
+          @include for-phone {
+            font-size: 160rem;
+            padding-top: 220rem;
+            padding-bottom: 220rem;
+          }
         }
       }
     }
