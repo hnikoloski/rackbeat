@@ -1,9 +1,19 @@
 .page-template-webinars {
   .hero {
+    @include for-phone {
+      .content {
+        &::after {
+          display: none;
+        }
+      }
+    }
     .extra {
       p {
         font-size: 82.7318rem;
         font-weight: $medium;
+        @include for-phone {
+          font-size: 220rem;
+        }
       }
     }
   }
@@ -17,11 +27,22 @@
       flex-direction: row;
       align-items: flex-start;
       align-content: flex-start;
+      @include for-phone {
+        margin-top: 550rem;
+        margin-bottom: 790rem;
+      }
       li {
         flex: 0 0 45%;
         width: 45%;
+        @include for-phone {
+          flex: 0 0 100%;
+          width: 100%;
+        }
         &:not(:last-of-type) {
           margin-bottom: 129.7385rem;
+          @include for-phone {
+            margin-bottom: 350rem;
+          }
         }
       }
     }
@@ -41,20 +62,35 @@
           font-size: 41.3659rem;
           font-weight: $semiBold;
           margin-top: 65.8094rem;
+          @include for-phone {
+            font-size: 160rem;
+            margin-bottom: 200rem;
+            margin-top: 200rem;
+          }
         }
         .container {
           display: flex;
           flex-wrap: wrap;
           justify-content: space-between;
           padding-right: 188.0268rem;
+          @include for-phone {
+            padding-right: 0;
+          }
           .col {
             flex: 0 0 auto;
             width: 1231.5757rem;
+            @include for-phone {
+              flex: 0 0 100%;
+              width: 100%;
+            }
             input,
             select,
             textarea {
               &:focus {
                 outline: 3.7605rem solid #1c4bf6;
+                @include for-phone {
+                  outline: 15rem solid #1c4bf6;
+                }
               }
             }
             input {
@@ -62,23 +98,32 @@
               &[type="tel"],
               &[type="email"] {
                 width: 100%;
-                background: #f9f7ff;
+                background: #f4f1fb;
                 padding: 37.6054rem 63.9291rem;
                 color: #000;
                 font-size: 37.6054rem;
                 line-height: 1.5;
                 border: none;
+                @include for-phone {
+                  padding: 140rem 270rem;
+                  font-size: 140rem;
+                }
               }
               &[type="submit"] {
                 border: none;
                 margin-top: -143rem;
                 width: 100%;
                 cursor: pointer;
+                @include for-phone {
+                  margin-top: 180rem;
+                  @include borderRadius(18rem);
+                  line-height: 1;
+                }
               }
             }
             textarea {
               width: 100%;
-              background: #f9f7ff;
+              background: #f4f1fb;
               padding: 37.6054rem 63.9291rem;
               color: #000;
               font-size: 37.6054rem;
@@ -87,10 +132,15 @@
               border: none;
               height: 396.7366rem;
               resize: none;
+              @include for-phone {
+                padding: 140rem 270rem;
+                font-size: 140rem;
+                height: 1800rem;
+              }
             }
             select {
               width: 100%;
-              background: #f9f7ff;
+              background: #f4f1fb;
               padding: 37.6054rem 63.9291rem;
               color: #000;
               font-size: 37.6054rem;
@@ -102,7 +152,11 @@
               appearance: none;
               position: relative;
               background: url("http://cdn1.iconfinder.com/data/icons/cc_mono_icon_set/blacks/16x16/br_down.png")
-                no-repeat 95% 55% #f9f7ff;
+                no-repeat 95% 55% #f4f1fb;
+              @include for-phone {
+                padding: 140rem 270rem;
+                font-size: 140rem;
+              }
             }
           }
         }
