@@ -73,7 +73,7 @@ jQuery(document).ready(function ($) {
 
     $('.page-template-prices #hero .slider-wrapper').slick({
         rows: 0,
-        infinite: true,
+        infinite: false,
         slidesToShow: 2,
         arrows: false,
         autoplay: true,
@@ -82,10 +82,7 @@ jQuery(document).ready(function ($) {
         variableHeight: true,
         responsive: [{
             breakpoint: 501,
-            settings: {
-                variableWidth: false,
-                slidesToShow: 1
-            }
+            settings: "unslick"
         }]
     })
     $('.page-template-prices #slider-section .slider-wrapper').slick({
