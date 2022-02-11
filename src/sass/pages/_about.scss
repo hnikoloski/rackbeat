@@ -3,13 +3,29 @@
     .img-wrapper {
       margin-top: 0;
       height: 1190.2098rem;
+      @include for-phone {
+        width: 100%;
+        height: 2003rem;
+        img {
+          padding-left: 0;
+        }
+      }
     }
     .content {
       width: 1295.5048rem;
+      @include for-phone {
+        width: 100%;
+        flex: 0 0 100%;
+        padding-right: 0;
+        padding-bottom: 300rem;
+      }
       p {
         color: #000;
         &:not(:last-of-type) {
           margin-bottom: 112.8161rem;
+          @include for-phone {
+            margin-bottom: 350rem;
+          }
         }
       }
     }
@@ -25,9 +41,14 @@
     }
     .ending {
       margin-top: 300.8429rem;
-
+      @include for-phone {
+        margin-top: 700rem;
+      }
       .heading {
         margin-bottom: 75.2107rem;
+        @include for-phone {
+          margin-bottom: 350rem;
+        }
       }
       p {
         a {
