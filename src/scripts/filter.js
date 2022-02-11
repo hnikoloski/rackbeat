@@ -4,15 +4,18 @@ jQuery(document).ready(function ($) {
     if ($('.filterable-apps').length) {
         getAllProjectsCategories();
         getAllProjects();
+
     }
 
     let linkText = '';
-    if ($('html').attr('lang') == 'en-US') {
+    if ($('html').attr('lang') == 'en-GB') {
         return linkText = 'See More';
     } else if ($('html').attr('lang') == 'da-DK') {
         return linkText = 'Se mere';
     } else if ($('html').attr('lang') == 'sv-SE') {
         return linkText = 'Se mer';
+    } else {
+        return linkText = 'See More';
     }
 
     function getAllProjects() {
@@ -85,4 +88,30 @@ jQuery(document).ready(function ($) {
                 console.log(error);
             });
     }
+
+    function getAllProjectsPaged(pageIndex) {
+        let apiLoader = `<div id="apiLoader"><i class="fas fa-spinner"></i></div>`;
+        $(".filterable-apps .filterable-results").html(apiLoader);
+        axios
+            .get("/wp-json/wp/v2/projects?per_page=5&page=" + pageIndex)
+            .then((response) => {
+                let projectData = response.data;
+                const projectsHtml = projectData.map((project) => {
+                    let projectImage = project.fimg_url;
+                    let projectName = project.title.rendered
+                    let projectLink = project.link
+
+                    return `<div class="col"><img src="${projectImage}" alt="${projectName}"> <a href="${projectLink}">${linkText}</a></div>`;
+                })
+                $(".filterable-apps .filterable-results").append(projectsHtml);
+                $('#apiLoader').remove();
+            })
+            .then(() => {
+                handleLoadMore();
+            })
+            .catch((error) => {
+                console.log(error);
+            });
+    }
+
 })

@@ -1,4 +1,11 @@
 .page-template-integrations {
+  @include for-phone {
+    .hero {
+      .content {
+        padding-right: 0;
+      }
+    }
+  }
   .filterable-apps {
     margin-bottom: 203.069rem;
     .wrapper {
@@ -18,6 +25,13 @@
           align-content: center;
           flex-wrap: wrap;
           flex-direction: row;
+          @include for-phone {
+            width: 100%;
+            overflow-x: scroll;
+            flex-wrap: nowrap;
+            justify-content: flex-start;
+            padding: 150rem 0;
+          }
           li {
             &:not(:last-of-type) {
               margin-right: 35.7251rem;
@@ -28,13 +42,19 @@
               display: block;
               padding: 35.7251rem 112.8161rem;
               font-size: 41.3659rem;
-              font-size: $medium;
+              font-weight: $medium;
               color: #000;
               transition: color 0s;
               &:hover,
               &.active {
                 background: linear-gradient(270deg, #1949f6 8.3%, #5676fd 100%);
                 color: #fff;
+              }
+              @include for-phone {
+                padding: 112rem 350rem;
+                font-size: 140rem;
+                @include borderRadius(320rem);
+                line-height: 1;
               }
             }
           }
@@ -56,12 +76,20 @@
           background: #fff;
           border: 0.94015rem solid #cacaff;
           padding: 95.8937rem 82.7318rem 75.2107rem 82.7318rem;
+          @include for-phone {
+            flex: 0 0 100%;
+            width: 100%;
+          }
           img {
             width: 100%;
             height: 112.8161rem;
             object-fit: contain;
             object-position: center;
             margin-bottom: 20.683rem;
+            @include for-phone {
+              height: 400rem;
+              margin-bottom: 70rem;
+            }
           }
           a {
             width: -moz-fit-content;
@@ -71,6 +99,9 @@
             font-size: 26.3238rem;
             color: #373d9e;
             font-weight: $medium;
+            @include for-phone {
+              font-size: 140rem;
+            }
           }
         }
         #apiLoader {
@@ -89,12 +120,21 @@
   }
   #short-description {
     margin-bottom: 188.0268rem;
+    @include for-phone {
+      margin-bottom: 500rem;
+    }
     .heading {
       margin-bottom: 131.6188rem;
+      @include for-phone {
+        margin-bottom: 300rem;
+      }
     }
     p {
       &:not(:last-of-type) {
         margin-bottom: 65.8094rem;
+        @include for-phone {
+          margin-bottom: 300rem;
+        }
       }
     }
   }
@@ -110,17 +150,36 @@
       right: 216.2309rem;
       background: url("../../assets/icons/dotted-purple-decoration.svg");
       @include bg-props(cover, center, no-repeat);
+      @include for-phone {
+        display: none;
+      }
     }
     .heading {
       margin-bottom: 188.0268rem;
+      @include for-phone {
+        margin-bottom: 300rem;
+      }
     }
     .checkmark-list {
+      @include for-phone {
+        margin-bottom: 550rem;
+      }
       li {
         flex: 0 0 auto;
         width: 1268.2386rem;
         margin-bottom: 82.7318rem;
+        @include for-phone {
+          flex: 0 0 100%;
+          width: 100%;
+          &:not(:last-of-type) {
+            margin-bottom: 350rem;
+          }
+        }
         &:nth-of-type(odd) {
           margin-right: 338.4483rem;
+          @include for-phone {
+            margin-right: 0;
+          }
         }
       }
     }
@@ -133,21 +192,38 @@
     justify-content: space-between;
     align-items: center;
     margin-bottom: 376.0537rem;
+    @include for-phone {
+      margin-bottom: 600rem;
+    }
     .col {
       flex: 0 0 auto;
       width: 1316.1878rem;
+      @include for-phone {
+        flex: 0 0 100%;
+        width: 100%;
+      }
       .heading {
         margin-bottom: 107.1753rem;
+        @include for-phone {
+          margin-bottom: 330rem;
+        }
       }
       p {
         &:not(:last-of-type) {
           margin-bottom: 65.8094rem;
+          @include for-phone {
+            margin-bottom: 300rem;
+          }
         }
       }
     }
     .img-wrapper {
       width: 1243.459rem;
       height: 1340.9697rem;
+      @include for-phone {
+        width: 100%;
+        height: 3591rem;
+      }
     }
     &.no-image {
       text-align: center;
@@ -164,21 +240,40 @@
     align-content: flex-end;
     flex-wrap: wrap;
     margin-bottom: 376.0537rem;
+    @include for-phone {
+      margin-bottom: 1000rem;
+    }
     .col {
       flex: 0 0 auto;
       width: 2331.5327rem;
+      @include for-phone {
+        flex: 0 0 100%;
+        width: 100%;
+      }
       .heading {
         margin-bottom: 101.5345rem;
+        @include for-phone {
+          margin-bottom: 330rem;
+        }
       }
       p {
         max-width: 1897.1907rem;
+        @include for-phone {
+          max-width: 100%;
+        }
         &:not(:last-of-type) {
           margin-bottom: 65.8094rem;
+          @include for-phone {
+            margin-bottom: 300rem;
+          }
         }
       }
     }
     .btn {
       flex: 0 0 auto;
+      @include for-phone {
+        margin-top: 300rem;
+      }
     }
   }
 }
