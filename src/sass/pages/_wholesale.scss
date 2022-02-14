@@ -8,9 +8,25 @@
   }
   #inner-content {
     margin-bottom: 413.659rem;
+
     header {
       margin-bottom: 120.3372rem;
       text-align: center;
+      position: relative;
+      &::after {
+        content: "";
+        position: absolute;
+        width: 3617.6362rem;
+        height: 3890.2751rem;
+        top: -1550rem;
+        right: -2586.0777rem;
+        background: radial-gradient(
+          43.24% 43.24% at 50% 50%,
+          #7a9bff 0%,
+          rgba(230, 230, 253, 0) 100%
+        );
+        opacity: 0.5;
+      }
       @include for-phone {
         margin-bottom: 1000rem;
       }

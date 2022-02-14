@@ -125,6 +125,22 @@
     }
   }
   .content-boxes {
+    position: relative;
+    &::after {
+      content: "";
+      position: absolute;
+      width: 3617.6362rem;
+      height: 3890.2751rem;
+      left: -2502.1399rem;
+      top: -1500rem;
+      background: radial-gradient(
+        43.24% 43.24% at 50% 50%,
+        #7a9bff 0%,
+        rgba(230, 230, 253, 0) 100%
+      );
+      opacity: 0.5;
+      z-index: -1;
+    }
     .row {
       display: flex;
       flex-wrap: wrap;
@@ -133,6 +149,24 @@
       align-content: center;
       flex-direction: row;
       margin-bottom: 357.251rem;
+      &:nth-of-type(2) {
+        position: relative;
+        &::after {
+          content: "";
+          position: absolute;
+          width: 3617.6362rem;
+          height: 3890.2751rem;
+          right: -2502.1399rem;
+          top: -1000rem;
+          background: radial-gradient(
+            43.24% 43.24% at 50% 50%,
+            #7a9bff 0%,
+            rgba(230, 230, 253, 0) 100%
+          );
+          opacity: 0.5;
+          z-index: -1;
+        }
+      }
       @include for-phone {
         flex-direction: column;
       }

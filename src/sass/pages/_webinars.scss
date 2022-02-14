@@ -27,6 +27,7 @@
       flex-direction: row;
       align-items: flex-start;
       align-content: flex-start;
+
       @include for-phone {
         margin-top: 550rem;
         margin-bottom: 790rem;
@@ -48,6 +49,22 @@
     }
     .bottom {
       margin-bottom: 376.0537rem;
+      position: relative;
+      &::after {
+        content: "";
+        position: absolute;
+        width: 3617.6362rem;
+        height: 3890.2751rem;
+        right: -3000.1399rem;
+        bottom: -400rem;
+        background: radial-gradient(
+          43.24% 43.24% at 50% 50%,
+          #7a9bff 0%,
+          rgba(230, 230, 253, 0) 100%
+        );
+        opacity: 0.5;
+        z-index: -1;
+      }
       form {
         .wpcf7-response-output {
           margin-right: 188.0268rem;

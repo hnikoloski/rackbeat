@@ -1,4 +1,21 @@
 .page-template-why-page {
+  position: relative;
+  overflow-x: hidden;
+  &::after {
+    content: "";
+    position: absolute;
+    width: 3617.6362rem;
+    height: 3890.2751rem;
+    right: -2502.1399rem;
+    bottom: 500rem;
+    background: radial-gradient(
+      43.24% 43.24% at 50% 50%,
+      #7a9bff 0%,
+      rgba(230, 230, 253, 0) 100%
+    );
+    opacity: 0.5;
+    z-index: -1;
+  }
   .hero {
     margin-top: 225.6322rem;
     margin-bottom: 84.6121rem;

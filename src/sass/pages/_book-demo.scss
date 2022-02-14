@@ -2,6 +2,22 @@
   .cta {
     margin-top: 56.408rem;
     margin-bottom: 366.6523rem;
+    position: relative;
+    &::before {
+      content: "";
+      position: absolute;
+      width: 3617.6362rem;
+      height: 3890.2751rem;
+      left: -2502.1399rem;
+      bottom: -1400rem;
+      background: radial-gradient(
+        43.24% 43.24% at 50% 50%,
+        #7a9bff 0%,
+        rgba(230, 230, 253, 0) 100%
+      );
+      opacity: 0.5;
+      z-index: -1;
+    }
     .wrapper {
       @include borderRadius(33.8448rem);
       padding-top: 146.6609rem;

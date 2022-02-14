@@ -1,7 +1,37 @@
 #product-long-description {
   margin-bottom: 376.0537rem;
+  position: relative;
+  &::after {
+    content: "";
+    position: absolute;
+    width: 3617.6362rem;
+    height: 3890.2751rem;
+    right: -2645.7319rem;
+    bottom: -1700rem;
+    background: radial-gradient(
+      43.24% 43.24% at 50% 50%,
+      #7a9bff 0%,
+      rgba(230, 230, 253, 0) 100%
+    );
+    opacity: 0.5;
+  }
   header {
     text-align: center;
+    position: relative;
+    &::before {
+      content: "";
+      position: absolute;
+      width: 3617.6362rem;
+      height: 3890.2751rem;
+      left: -2502.1399rem;
+      top: -1190rem;
+      background: radial-gradient(
+        43.24% 43.24% at 50% 50%,
+        #7a9bff 0%,
+        rgba(230, 230, 253, 0) 100%
+      );
+      opacity: 0.5;
+    }
     @include for-phone {
       text-align: left;
     }
@@ -127,36 +157,39 @@
         }
       }
       &::before {
-        content: "";
-        position: absolute;
-        top: 220rem;
-        @include hor-center();
-        width: 2rem;
-        background-image: linear-gradient(
-          #6f75ed 33%,
-          rgba(255, 255, 255, 0) 0%
-        );
-        background-position: right;
-        background-size: 1.8803rem 38.8027rem;
-        background-repeat: repeat-y;
-        height: calc(100% - 220rem);
         @include for-phone {
-          height: 20rem;
-          width: 100%;
+          content: "";
+          position: absolute;
+          top: 220rem;
+          @include hor-center();
+          width: 2rem;
           background-image: linear-gradient(
-            to right,
             #6f75ed 33%,
             rgba(255, 255, 255, 0) 0%
           );
-          background-position: bottom;
-          background-size: 250rem 20rem;
-          background-repeat: repeat-x;
-          top: auto;
-          @include rm-transform();
-          bottom: 180rem;
-          left: 0;
+          background-position: right;
+          background-size: 1.8803rem 38.8027rem;
+          background-repeat: repeat-y;
+          height: calc(100% - 220rem);
+          @include for-phone {
+            height: 20rem;
+            width: 100%;
+            background-image: linear-gradient(
+              to right,
+              #6f75ed 33%,
+              rgba(255, 255, 255, 0) 0%
+            );
+            background-position: bottom;
+            background-size: 250rem 20rem;
+            background-repeat: repeat-x;
+            top: auto;
+            @include rm-transform();
+            bottom: 180rem;
+            left: 0;
+          }
         }
       }
+
       &:nth-of-type(odd) {
         .col {
           &:first-of-type {
