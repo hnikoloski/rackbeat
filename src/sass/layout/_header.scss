@@ -228,7 +228,30 @@
   .lang-switcher {
     margin-left: 75.2107rem;
     @include for-phone {
-      display: none !important;
+      display: flex;
+      align-items: center;
+      align-content: center;
+      justify-content: space-between;
+      margin-left: 0;
+      margin-bottom: 220rem;
+      h3 {
+        font-size: 160rem;
+        font-weight: $regular;
+        color: #0a2e66;
+      }
+      .trp-ls-shortcode-current-language {
+        display: none;
+      }
+      .trp-ls-shortcode-language {
+        display: flex !important;
+        visibility: visible;
+        height: 223rem;
+        width: 1250rem !important;
+        justify-content: space-between;
+        align-content: center;
+        align-items: center;
+        position: relative;
+      }
     }
     .trp-language-switcher > div {
       border: none;
@@ -239,8 +262,9 @@
       color: #0a2e66;
       font-weight: $medium;
       @include for-phone {
-        display: flex !important;
         visibility: visible;
+        width: 1250rem !important;
+        position: relative;
       }
       > a {
         color: #0a2e66;
@@ -252,6 +276,10 @@
         align-content: center;
         @include for-phone {
           font-size: 0px;
+
+          &.trp-ls-disabled-language {
+            display: none;
+          }
         }
         > img {
           margin: 0 5.6408rem;
@@ -266,6 +294,17 @@
           margin-bottom: 18.8027rem;
           margin-top: 18.8027rem;
           padding: 0 9.4013rem;
+          @include for-phone {
+            display: block;
+            width: 310rem;
+            height: 221rem;
+            margin: 0;
+            img {
+              @include fullSizeImg(cover);
+              display: block;
+              margin: 0;
+            }
+          }
         }
       }
     }
@@ -429,6 +468,7 @@
         width: 100%;
         flex: 0 0 100%;
         li {
+          padding: 0;
           &:not(:last-of-type) {
             margin-bottom: 140rem;
           }

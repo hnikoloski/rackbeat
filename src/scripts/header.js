@@ -24,9 +24,12 @@ jQuery(document).ready(function ($) {
         $('#mob-menu').css('height', 'calc(100vh - ' + $("#masthead").outerHeight() + 'px)');
         let primaryMenu = $('#masthead .col ul#primary-menu');
         let primaryToolbar = $('#masthead .col ul#primary-toolbar');
+        let langLinks = $('.lang-switcher');
 
         $('#mob-menu').append(primaryMenu);
         $('#mob-menu').append(primaryToolbar);
+        $('#mob-menu #primary-menu').prepend(langLinks);
+        $('#masthead .lang-switcher').prepend('<h3>Languages: </h3>');
         $('#masthead .col').remove();
 
         $('#primary-menu li.menu-item-has-children > a').append('<span class="sub-menu-trigger"><span></span><span></span></span>');

@@ -42,7 +42,7 @@ jQuery(document).ready(function ($) {
     );
     $("#cookie-notice .accept").on("click", function (e) {
       e.preventDefault();
-      setCookie("visitorCookie", "cookieAccepted", 3);
+      setCookie("visitorCookie", "cookieAccepted", 10);
       $("#cookie-notice").hide();
       setTimeout(function () {
         $("#cookie-notice").remove();
