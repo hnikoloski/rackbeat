@@ -88,6 +88,4 @@ jQuery(document).ready(function ($) {
             });
     }
 
-
-
 })
