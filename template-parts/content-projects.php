@@ -61,7 +61,7 @@
 										the_title(); ?>
 					<a href="<?php the_field('read_more_link'); ?>" target="_blank" rel="noopener noreferrer"><?php _e('here', 'starter'); ?></a>
 				</p>
-				<a href="/integrations" class="btn gradient-bg w-fit-content"><?php _e('Back to apps', 'starter'); ?></a>
+				<a href="/integrations" class="btn gradient-bg w-fit-content"><?php _e('Back to integrations', 'starter'); ?></a>
 			</div>
 			<div class="col">
 				<div class="embed-container">
